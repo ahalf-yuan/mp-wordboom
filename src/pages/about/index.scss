@@ -1,3 +1,83 @@
-.about {
+page {
+  // background: repeating-radial-gradient(#98efcf, transparent 1000Px);
+  background: papayawhip;
+}
+
+.page-wrapper {
   // height: 3000px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header-wrapper {
+  height: 60px;
+  background: #fff;
+}
+
+.content-wrapper {
+  font-size: 12Px;
+  flex: 1;
+  overflow-y: scroll;
+  margin: 20Px;
+  padding: 10Px 20Px;
+  border-radius: 20Px;
+  box-shadow: 0 8px 12px #ebedf0;
+  background: #fff;
+
+  .card-wrapper {
+    .word-name {
+      font-size: 20Px;
+      font-weight: bold;
+      margin-bottom: 12Px;
+      display: block;
+    }
+
+    .pronounce-box {
+      display: flex;
+      margin-bottom: 12Px;
+
+      .item {
+        display: flex;
+        font-size: 12PX;
+
+        &:first-child {
+          margin-right: 12PX;
+        }
+
+        .van-icon {
+          margin-right: 4PX;
+        }
+
+        .ph-item {
+          margin-left: 4PX;
+        }
+      }
+    }
+
+    .mean-box {
+      .item {
+        display: flex;
+      }
+      .item .mean-part {
+        color: #9E9E9E;
+        margin-right: 10Px;
+      }
+    }
+
+    .exchange-box {
+      .item .label {
+        margin-right: 8Px;
+      }
+      .item .exchange {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.footer-wrapper {
+  height: 80px;
+  // background: rgb(192, 163, 163);
+  text-align: center;
 }

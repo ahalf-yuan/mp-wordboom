@@ -1,8 +1,8 @@
 {
-  "name": "taro3_react",
+  "name": "mp-wordboom",
   "version": "1.0.0",
   "private": true,
-  "description": "taro3_react",
+  "description": "wordboom-移动端、浏览记忆单词",
   "templateInfo": {
     "name": "default",
     "typescript": true,

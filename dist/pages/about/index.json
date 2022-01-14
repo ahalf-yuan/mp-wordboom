@@ -1,1 +1,1 @@
-{"navigationBarTitleText":"首页","usingComponents":{"custom-wrapper":"../../custom-wrapper","comp":"../../comp"}}
+{"navigationStyle":"custom","usingComponents":{"custom-wrapper":"../../custom-wrapper","van-nav-bar":"../../components/vant-weapp/dist/nav-bar/index","van-icon":"../../components/vant-weapp/dist/icon/index","van-divider":"../../components/vant-weapp/dist/divider/index","van-transition":"../../components/vant-weapp/dist/transition/index","van-button":"../../components/vant-weapp/dist/button/index","comp":"../../comp"}}

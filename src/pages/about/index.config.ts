@@ -1,3 +1,10 @@
 export default {
-  navigationBarTitleText: '首页'
+  navigationStyle: "custom",
+  usingComponents: {
+    'van-nav-bar': '@/vant/nav-bar/index',
+    "van-icon": "@/vant/icon/index",
+    "van-divider": "@/vant/divider/index",
+    "van-transition": "@/vant/transition/index",
+    "van-button": "@/vant/button/index",
+  }
 }

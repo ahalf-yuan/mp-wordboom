@@ -16,3 +16,14 @@ declare const process: {
     [key: string]: any;
   }
 }
+
+// https://github.com/microsoft/TypeScript/issues/15449
+declare namespace JSX {
+  interface IntrinsicElements {
+    'van-button': any,
+    'van-calendar': any,
+    'van-nav-bar': any,
+    'van-icon': any,
+    'van-divider': any,
+  }
+}
