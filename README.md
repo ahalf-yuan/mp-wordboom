@@ -1,6 +1,6 @@
-# taro3-vant-sample
+# mp-wordboom
 
-> Taro3 中使用 vant-weapp 的示例 React 版本
+> Template from [taro3-vant-sample](https://github.com/NervJS/taro3-vant-sample)
 
 ## 需要关注的点
 
