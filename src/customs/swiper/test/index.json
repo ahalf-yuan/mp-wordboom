@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "card-swipe": "../cardSwipe/cardSwipe",
+    "card": "../card/card"
+  }
+}

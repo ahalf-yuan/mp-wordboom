@@ -26,6 +26,7 @@ const config = {
       { from: 'src/components/vant-weapp/dist/calendar/utils.wxs', to: 'dist/components/vant-weapp/dist/calendar/utils.wxs' },
       { from: 'src/components/vant-weapp/dist/calendar/calendar.wxml', to: 'dist/components/vant-weapp/dist/calendar/calendar.wxml' },
       { from: 'src/components/vant-weapp/dist/calendar/components/month/index.wxs', to: 'dist/components/vant-weapp/dist/calendar/components/month/index.wxs' },
+      { from: 'src/customs/swiper/cardSwipe/cardSwipe.wxs', to: 'dist/customs/swiper/cardSwipe/cardSwipe.wxs' },
     ],
     options: {
     }

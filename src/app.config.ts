@@ -1,7 +1,8 @@
 export default {
   pages: [
     'pages/index/index',
-    'pages/about/index'
+    'pages/about/index',
+    'customs/swiper/test/index',
   ],
   window: {
     backgroundTextStyle: 'light',

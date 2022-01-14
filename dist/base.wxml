@@ -106,7 +106,7 @@
 </template>
   
 <template name="tmpl_0_van-nav-bar">
-  <van-nav-bar title="{{i.title}}" fixed="{{i.fixed}}" class="{{i.class}}" id="{{i.id}}" leftText="{{i.leftText}}" rightText="{{i.rightText}}" leftArrow="{{i.leftArrow}}" bind:click-left="eh" bind:click-right="eh"  id="{{i.uid}}">
+  <van-nav-bar title="{{i.title}}" leftText="{{i.leftText}}" leftArrow="{{i.leftArrow}}" bind:click-left="eh" bind:click-right="eh"  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -122,7 +122,7 @@
 </template>
   
 <template name="tmpl_0_van-divider">
-  <van-divider dashed="{{i.dashed}}" contentPosition="{{i.contentPosition}}" children="{{i.children}}"  id="{{i.uid}}">
+  <van-divider contentPosition="{{i.contentPosition}}" children="{{i.children}}" dashed="{{i.dashed}}"  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -130,11 +130,19 @@
 </template>
   
 <template name="tmpl_0_van-transition">
-  <van-transition show="{{i.show}}" children="{{i.children}}" name="{{i.name}}"  id="{{i.uid}}">
+  <van-transition  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
   </van-transition>
+</template>
+  
+<template name="tmpl_0_swiper-card">
+  <swiper-card  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </swiper-card>
 </template>
   
 <template name="tmpl_0_container">
@@ -222,7 +230,7 @@
 </template>
   
 <template name="tmpl_1_van-nav-bar">
-  <van-nav-bar title="{{i.title}}" fixed="{{i.fixed}}" class="{{i.class}}" id="{{i.id}}" leftText="{{i.leftText}}" rightText="{{i.rightText}}" leftArrow="{{i.leftArrow}}" bind:click-left="eh" bind:click-right="eh"  id="{{i.uid}}">
+  <van-nav-bar title="{{i.title}}" leftText="{{i.leftText}}" leftArrow="{{i.leftArrow}}" bind:click-left="eh" bind:click-right="eh"  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -238,7 +246,7 @@
 </template>
   
 <template name="tmpl_1_van-divider">
-  <van-divider dashed="{{i.dashed}}" contentPosition="{{i.contentPosition}}" children="{{i.children}}"  id="{{i.uid}}">
+  <van-divider contentPosition="{{i.contentPosition}}" children="{{i.children}}" dashed="{{i.dashed}}"  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -246,11 +254,19 @@
 </template>
   
 <template name="tmpl_1_van-transition">
-  <van-transition show="{{i.show}}" children="{{i.children}}" name="{{i.name}}"  id="{{i.uid}}">
+  <van-transition  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
   </van-transition>
+</template>
+  
+<template name="tmpl_1_swiper-card">
+  <swiper-card  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </swiper-card>
 </template>
   
 <template name="tmpl_1_container">
@@ -338,7 +354,7 @@
 </template>
   
 <template name="tmpl_2_van-nav-bar">
-  <van-nav-bar title="{{i.title}}" fixed="{{i.fixed}}" class="{{i.class}}" id="{{i.id}}" leftText="{{i.leftText}}" rightText="{{i.rightText}}" leftArrow="{{i.leftArrow}}" bind:click-left="eh" bind:click-right="eh"  id="{{i.uid}}">
+  <van-nav-bar title="{{i.title}}" leftText="{{i.leftText}}" leftArrow="{{i.leftArrow}}" bind:click-left="eh" bind:click-right="eh"  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -354,7 +370,7 @@
 </template>
   
 <template name="tmpl_2_van-divider">
-  <van-divider dashed="{{i.dashed}}" contentPosition="{{i.contentPosition}}" children="{{i.children}}"  id="{{i.uid}}">
+  <van-divider contentPosition="{{i.contentPosition}}" children="{{i.children}}" dashed="{{i.dashed}}"  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -362,11 +378,19 @@
 </template>
   
 <template name="tmpl_2_van-transition">
-  <van-transition show="{{i.show}}" children="{{i.children}}" name="{{i.name}}"  id="{{i.uid}}">
+  <van-transition  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
   </van-transition>
+</template>
+  
+<template name="tmpl_2_swiper-card">
+  <swiper-card  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </swiper-card>
 </template>
   
 <template name="tmpl_2_container">
@@ -454,7 +478,7 @@
 </template>
   
 <template name="tmpl_3_van-nav-bar">
-  <van-nav-bar title="{{i.title}}" fixed="{{i.fixed}}" class="{{i.class}}" id="{{i.id}}" leftText="{{i.leftText}}" rightText="{{i.rightText}}" leftArrow="{{i.leftArrow}}" bind:click-left="eh" bind:click-right="eh"  id="{{i.uid}}">
+  <van-nav-bar title="{{i.title}}" leftText="{{i.leftText}}" leftArrow="{{i.leftArrow}}" bind:click-left="eh" bind:click-right="eh"  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -470,7 +494,7 @@
 </template>
   
 <template name="tmpl_3_van-divider">
-  <van-divider dashed="{{i.dashed}}" contentPosition="{{i.contentPosition}}" children="{{i.children}}"  id="{{i.uid}}">
+  <van-divider contentPosition="{{i.contentPosition}}" children="{{i.children}}" dashed="{{i.dashed}}"  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -478,11 +502,19 @@
 </template>
   
 <template name="tmpl_3_van-transition">
-  <van-transition show="{{i.show}}" children="{{i.children}}" name="{{i.name}}"  id="{{i.uid}}">
+  <van-transition  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
   </van-transition>
+</template>
+  
+<template name="tmpl_3_swiper-card">
+  <swiper-card  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </swiper-card>
 </template>
   
 <template name="tmpl_3_container">
@@ -562,7 +594,7 @@
 </template>
   
 <template name="tmpl_4_van-nav-bar">
-  <van-nav-bar title="{{i.title}}" fixed="{{i.fixed}}" class="{{i.class}}" id="{{i.id}}" leftText="{{i.leftText}}" rightText="{{i.rightText}}" leftArrow="{{i.leftArrow}}" bind:click-left="eh" bind:click-right="eh"  id="{{i.uid}}">
+  <van-nav-bar title="{{i.title}}" leftText="{{i.leftText}}" leftArrow="{{i.leftArrow}}" bind:click-left="eh" bind:click-right="eh"  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -578,7 +610,7 @@
 </template>
   
 <template name="tmpl_4_van-divider">
-  <van-divider dashed="{{i.dashed}}" contentPosition="{{i.contentPosition}}" children="{{i.children}}"  id="{{i.uid}}">
+  <van-divider contentPosition="{{i.contentPosition}}" children="{{i.children}}" dashed="{{i.dashed}}"  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -586,11 +618,19 @@
 </template>
   
 <template name="tmpl_4_van-transition">
-  <van-transition show="{{i.show}}" children="{{i.children}}" name="{{i.name}}"  id="{{i.uid}}">
+  <van-transition  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
   </van-transition>
+</template>
+  
+<template name="tmpl_4_swiper-card">
+  <swiper-card  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </swiper-card>
 </template>
   
 <template name="tmpl_4_container">
@@ -670,7 +710,7 @@
 </template>
   
 <template name="tmpl_5_van-nav-bar">
-  <van-nav-bar title="{{i.title}}" fixed="{{i.fixed}}" class="{{i.class}}" id="{{i.id}}" leftText="{{i.leftText}}" rightText="{{i.rightText}}" leftArrow="{{i.leftArrow}}" bind:click-left="eh" bind:click-right="eh"  id="{{i.uid}}">
+  <van-nav-bar title="{{i.title}}" leftText="{{i.leftText}}" leftArrow="{{i.leftArrow}}" bind:click-left="eh" bind:click-right="eh"  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -686,7 +726,7 @@
 </template>
   
 <template name="tmpl_5_van-divider">
-  <van-divider dashed="{{i.dashed}}" contentPosition="{{i.contentPosition}}" children="{{i.children}}"  id="{{i.uid}}">
+  <van-divider contentPosition="{{i.contentPosition}}" children="{{i.children}}" dashed="{{i.dashed}}"  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -694,11 +734,19 @@
 </template>
   
 <template name="tmpl_5_van-transition">
-  <van-transition show="{{i.show}}" children="{{i.children}}" name="{{i.name}}"  id="{{i.uid}}">
+  <van-transition  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
   </van-transition>
+</template>
+  
+<template name="tmpl_5_swiper-card">
+  <swiper-card  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </swiper-card>
 </template>
   
 <template name="tmpl_5_container">
@@ -770,7 +818,7 @@
 </template>
   
 <template name="tmpl_6_van-nav-bar">
-  <van-nav-bar title="{{i.title}}" fixed="{{i.fixed}}" class="{{i.class}}" id="{{i.id}}" leftText="{{i.leftText}}" rightText="{{i.rightText}}" leftArrow="{{i.leftArrow}}" bind:click-left="eh" bind:click-right="eh"  id="{{i.uid}}">
+  <van-nav-bar title="{{i.title}}" leftText="{{i.leftText}}" leftArrow="{{i.leftArrow}}" bind:click-left="eh" bind:click-right="eh"  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -786,7 +834,7 @@
 </template>
   
 <template name="tmpl_6_van-divider">
-  <van-divider dashed="{{i.dashed}}" contentPosition="{{i.contentPosition}}" children="{{i.children}}"  id="{{i.uid}}">
+  <van-divider contentPosition="{{i.contentPosition}}" children="{{i.children}}" dashed="{{i.dashed}}"  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -794,11 +842,19 @@
 </template>
   
 <template name="tmpl_6_van-transition">
-  <van-transition show="{{i.show}}" children="{{i.children}}" name="{{i.name}}"  id="{{i.uid}}">
+  <van-transition  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
   </van-transition>
+</template>
+  
+<template name="tmpl_6_swiper-card">
+  <swiper-card  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </swiper-card>
 </template>
   
 <template name="tmpl_6_container">
@@ -870,7 +926,7 @@
 </template>
   
 <template name="tmpl_7_van-nav-bar">
-  <van-nav-bar title="{{i.title}}" fixed="{{i.fixed}}" class="{{i.class}}" id="{{i.id}}" leftText="{{i.leftText}}" rightText="{{i.rightText}}" leftArrow="{{i.leftArrow}}" bind:click-left="eh" bind:click-right="eh"  id="{{i.uid}}">
+  <van-nav-bar title="{{i.title}}" leftText="{{i.leftText}}" leftArrow="{{i.leftArrow}}" bind:click-left="eh" bind:click-right="eh"  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -886,7 +942,7 @@
 </template>
   
 <template name="tmpl_7_van-divider">
-  <van-divider dashed="{{i.dashed}}" contentPosition="{{i.contentPosition}}" children="{{i.children}}"  id="{{i.uid}}">
+  <van-divider contentPosition="{{i.contentPosition}}" children="{{i.children}}" dashed="{{i.dashed}}"  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -894,11 +950,19 @@
 </template>
   
 <template name="tmpl_7_van-transition">
-  <van-transition show="{{i.show}}" children="{{i.children}}" name="{{i.name}}"  id="{{i.uid}}">
+  <van-transition  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
   </van-transition>
+</template>
+  
+<template name="tmpl_7_swiper-card">
+  <swiper-card  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </swiper-card>
 </template>
   
 <template name="tmpl_7_container">
@@ -962,7 +1026,7 @@
 </template>
   
 <template name="tmpl_8_van-nav-bar">
-  <van-nav-bar title="{{i.title}}" fixed="{{i.fixed}}" class="{{i.class}}" id="{{i.id}}" leftText="{{i.leftText}}" rightText="{{i.rightText}}" leftArrow="{{i.leftArrow}}" bind:click-left="eh" bind:click-right="eh"  id="{{i.uid}}">
+  <van-nav-bar title="{{i.title}}" leftText="{{i.leftText}}" leftArrow="{{i.leftArrow}}" bind:click-left="eh" bind:click-right="eh"  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -978,7 +1042,7 @@
 </template>
   
 <template name="tmpl_8_van-divider">
-  <van-divider dashed="{{i.dashed}}" contentPosition="{{i.contentPosition}}" children="{{i.children}}"  id="{{i.uid}}">
+  <van-divider contentPosition="{{i.contentPosition}}" children="{{i.children}}" dashed="{{i.dashed}}"  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -986,11 +1050,19 @@
 </template>
   
 <template name="tmpl_8_van-transition">
-  <van-transition show="{{i.show}}" children="{{i.children}}" name="{{i.name}}"  id="{{i.uid}}">
+  <van-transition  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
   </van-transition>
+</template>
+  
+<template name="tmpl_8_swiper-card">
+  <swiper-card  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </swiper-card>
 </template>
   
 <template name="tmpl_8_container">
@@ -1054,7 +1126,7 @@
 </template>
   
 <template name="tmpl_9_van-nav-bar">
-  <van-nav-bar title="{{i.title}}" fixed="{{i.fixed}}" class="{{i.class}}" id="{{i.id}}" leftText="{{i.leftText}}" rightText="{{i.rightText}}" leftArrow="{{i.leftArrow}}" bind:click-left="eh" bind:click-right="eh"  id="{{i.uid}}">
+  <van-nav-bar title="{{i.title}}" leftText="{{i.leftText}}" leftArrow="{{i.leftArrow}}" bind:click-left="eh" bind:click-right="eh"  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -1070,7 +1142,7 @@
 </template>
   
 <template name="tmpl_9_van-divider">
-  <van-divider dashed="{{i.dashed}}" contentPosition="{{i.contentPosition}}" children="{{i.children}}"  id="{{i.uid}}">
+  <van-divider contentPosition="{{i.contentPosition}}" children="{{i.children}}" dashed="{{i.dashed}}"  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -1078,11 +1150,19 @@
 </template>
   
 <template name="tmpl_9_van-transition">
-  <van-transition show="{{i.show}}" children="{{i.children}}" name="{{i.name}}"  id="{{i.uid}}">
+  <van-transition  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
   </van-transition>
+</template>
+  
+<template name="tmpl_9_swiper-card">
+  <swiper-card  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </swiper-card>
 </template>
   
 <template name="tmpl_9_container">
@@ -1146,7 +1226,7 @@
 </template>
   
 <template name="tmpl_10_van-nav-bar">
-  <van-nav-bar title="{{i.title}}" fixed="{{i.fixed}}" class="{{i.class}}" id="{{i.id}}" leftText="{{i.leftText}}" rightText="{{i.rightText}}" leftArrow="{{i.leftArrow}}" bind:click-left="eh" bind:click-right="eh"  id="{{i.uid}}">
+  <van-nav-bar title="{{i.title}}" leftText="{{i.leftText}}" leftArrow="{{i.leftArrow}}" bind:click-left="eh" bind:click-right="eh"  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -1162,7 +1242,7 @@
 </template>
   
 <template name="tmpl_10_van-divider">
-  <van-divider dashed="{{i.dashed}}" contentPosition="{{i.contentPosition}}" children="{{i.children}}"  id="{{i.uid}}">
+  <van-divider contentPosition="{{i.contentPosition}}" children="{{i.children}}" dashed="{{i.dashed}}"  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -1170,11 +1250,19 @@
 </template>
   
 <template name="tmpl_10_van-transition">
-  <van-transition show="{{i.show}}" children="{{i.children}}" name="{{i.name}}"  id="{{i.uid}}">
+  <van-transition  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
   </van-transition>
+</template>
+  
+<template name="tmpl_10_swiper-card">
+  <swiper-card  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </swiper-card>
 </template>
   
 <template name="tmpl_10_container">
@@ -1238,7 +1326,7 @@
 </template>
   
 <template name="tmpl_11_van-nav-bar">
-  <van-nav-bar title="{{i.title}}" fixed="{{i.fixed}}" class="{{i.class}}" id="{{i.id}}" leftText="{{i.leftText}}" rightText="{{i.rightText}}" leftArrow="{{i.leftArrow}}" bind:click-left="eh" bind:click-right="eh"  id="{{i.uid}}">
+  <van-nav-bar title="{{i.title}}" leftText="{{i.leftText}}" leftArrow="{{i.leftArrow}}" bind:click-left="eh" bind:click-right="eh"  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -1254,7 +1342,7 @@
 </template>
   
 <template name="tmpl_11_van-divider">
-  <van-divider dashed="{{i.dashed}}" contentPosition="{{i.contentPosition}}" children="{{i.children}}"  id="{{i.uid}}">
+  <van-divider contentPosition="{{i.contentPosition}}" children="{{i.children}}" dashed="{{i.dashed}}"  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -1262,11 +1350,19 @@
 </template>
   
 <template name="tmpl_11_van-transition">
-  <van-transition show="{{i.show}}" children="{{i.children}}" name="{{i.name}}"  id="{{i.uid}}">
+  <van-transition  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
   </van-transition>
+</template>
+  
+<template name="tmpl_11_swiper-card">
+  <swiper-card  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </swiper-card>
 </template>
   
 <template name="tmpl_11_container">
@@ -1330,7 +1426,7 @@
 </template>
   
 <template name="tmpl_12_van-nav-bar">
-  <van-nav-bar title="{{i.title}}" fixed="{{i.fixed}}" class="{{i.class}}" id="{{i.id}}" leftText="{{i.leftText}}" rightText="{{i.rightText}}" leftArrow="{{i.leftArrow}}" bind:click-left="eh" bind:click-right="eh"  id="{{i.uid}}">
+  <van-nav-bar title="{{i.title}}" leftText="{{i.leftText}}" leftArrow="{{i.leftArrow}}" bind:click-left="eh" bind:click-right="eh"  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -1346,7 +1442,7 @@
 </template>
   
 <template name="tmpl_12_van-divider">
-  <van-divider dashed="{{i.dashed}}" contentPosition="{{i.contentPosition}}" children="{{i.children}}"  id="{{i.uid}}">
+  <van-divider contentPosition="{{i.contentPosition}}" children="{{i.children}}" dashed="{{i.dashed}}"  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -1354,11 +1450,19 @@
 </template>
   
 <template name="tmpl_12_van-transition">
-  <van-transition show="{{i.show}}" children="{{i.children}}" name="{{i.name}}"  id="{{i.uid}}">
+  <van-transition  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
   </van-transition>
+</template>
+  
+<template name="tmpl_12_swiper-card">
+  <swiper-card  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </swiper-card>
 </template>
   
 <template name="tmpl_12_container">
@@ -1422,7 +1526,7 @@
 </template>
   
 <template name="tmpl_13_van-nav-bar">
-  <van-nav-bar title="{{i.title}}" fixed="{{i.fixed}}" class="{{i.class}}" id="{{i.id}}" leftText="{{i.leftText}}" rightText="{{i.rightText}}" leftArrow="{{i.leftArrow}}" bind:click-left="eh" bind:click-right="eh"  id="{{i.uid}}">
+  <van-nav-bar title="{{i.title}}" leftText="{{i.leftText}}" leftArrow="{{i.leftArrow}}" bind:click-left="eh" bind:click-right="eh"  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -1438,7 +1542,7 @@
 </template>
   
 <template name="tmpl_13_van-divider">
-  <van-divider dashed="{{i.dashed}}" contentPosition="{{i.contentPosition}}" children="{{i.children}}"  id="{{i.uid}}">
+  <van-divider contentPosition="{{i.contentPosition}}" children="{{i.children}}" dashed="{{i.dashed}}"  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -1446,11 +1550,19 @@
 </template>
   
 <template name="tmpl_13_van-transition">
-  <van-transition show="{{i.show}}" children="{{i.children}}" name="{{i.name}}"  id="{{i.uid}}">
+  <van-transition  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
   </van-transition>
+</template>
+  
+<template name="tmpl_13_swiper-card">
+  <swiper-card  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </swiper-card>
 </template>
   
 <template name="tmpl_13_container">
@@ -1514,7 +1626,7 @@
 </template>
   
 <template name="tmpl_14_van-nav-bar">
-  <van-nav-bar title="{{i.title}}" fixed="{{i.fixed}}" class="{{i.class}}" id="{{i.id}}" leftText="{{i.leftText}}" rightText="{{i.rightText}}" leftArrow="{{i.leftArrow}}" bind:click-left="eh" bind:click-right="eh"  id="{{i.uid}}">
+  <van-nav-bar title="{{i.title}}" leftText="{{i.leftText}}" leftArrow="{{i.leftArrow}}" bind:click-left="eh" bind:click-right="eh"  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -1530,7 +1642,7 @@
 </template>
   
 <template name="tmpl_14_van-divider">
-  <van-divider dashed="{{i.dashed}}" contentPosition="{{i.contentPosition}}" children="{{i.children}}"  id="{{i.uid}}">
+  <van-divider contentPosition="{{i.contentPosition}}" children="{{i.children}}" dashed="{{i.dashed}}"  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -1538,11 +1650,19 @@
 </template>
   
 <template name="tmpl_14_van-transition">
-  <van-transition show="{{i.show}}" children="{{i.children}}" name="{{i.name}}"  id="{{i.uid}}">
+  <van-transition  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
   </van-transition>
+</template>
+  
+<template name="tmpl_14_swiper-card">
+  <swiper-card  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </swiper-card>
 </template>
   
 <template name="tmpl_14_container">
