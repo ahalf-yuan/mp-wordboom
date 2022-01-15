@@ -360,20 +360,19 @@ var About = /*#__PURE__*/function (_Component) {
       }); // MOCK
 
       var cards = [{
-        title: '123',
         wordName: detail.word_name,
         phItems: phItems,
         meanParts: meanParts,
+        sentence: "One of the reasons that flexbox quickly caught the interest of web developers is that it brought proper alignment capabilities to the web for the first time.",
         exchange: newExchnage
       }, {
-        title: '123',
-        wordName: detail.word_name,
+        wordName: "Accessibility",
         phItems: phItems,
+        sentence: 'Currently, she’s working on a new course, "Practical Accessibility," meant to teach devs and designers ways to make their products accessible.',
         meanParts: meanParts,
         exchange: newExchnage
       }, {
-        title: '123',
-        wordName: detail.word_name,
+        wordName: "test",
         phItems: phItems,
         meanParts: meanParts,
         exchange: newExchnage
@@ -381,25 +380,34 @@ var About = /*#__PURE__*/function (_Component) {
       return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__["jsxs"])(_tarojs_components__WEBPACK_IMPORTED_MODULE_11__[/* View */ "c"], {
         className: "page-wrapper",
         children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__["jsx"])("van-nav-bar", {
+          customStyle: "background:#4DC591;border:none;color:#fff;",
           title: "\u5206\u7C7B\u6807\u9898",
-          leftText: "\u8FD4\u56DE",
-          leftArrow: true,
           onClickLeft: this.onClickLeft,
-          onClickRight: this.onClickRight
-        }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__["jsx"])(_tarojs_components__WEBPACK_IMPORTED_MODULE_11__[/* View */ "c"], {
-          className: "header-wrapper",
-          children: "header"
-        }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__["jsxs"])(_tarojs_components__WEBPACK_IMPORTED_MODULE_11__[/* View */ "c"], {
-          className: "content-wrapper",
-          children: ["\u5185\u5BB9", /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__["jsx"])("card-swipe", {
-            className: "card-swipe",
-            cards: cards
-          })]
-        }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__["jsx"])(_tarojs_components__WEBPACK_IMPORTED_MODULE_11__[/* View */ "c"], {
-          className: "footer-wrapper",
-          children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__["jsx"])(_tarojs_components__WEBPACK_IMPORTED_MODULE_11__[/* View */ "c"], {
-            children: "\u6807\u8BB0\u4E3A\u5DF2\u638C\u63E1"
+          onClickRight: this.onClickRight,
+          children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__["jsx"])(_tarojs_components__WEBPACK_IMPORTED_MODULE_11__[/* Slot */ "a"], {
+            name: "left",
+            children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__["jsx"])(_tarojs_components__WEBPACK_IMPORTED_MODULE_11__[/* View */ "c"], {
+              style: {
+                position: "absolute",
+                top: 0
+              },
+              children: "Hello world"
+            })
           })
+        }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__["jsxs"])(_tarojs_components__WEBPACK_IMPORTED_MODULE_11__[/* View */ "c"], {
+          className: "page-content",
+          children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__["jsx"])(_tarojs_components__WEBPACK_IMPORTED_MODULE_11__[/* View */ "c"], {
+            className: "content-wrapper",
+            children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__["jsx"])("card-swipe", {
+              className: "card-swipe",
+              cards: cards
+            })
+          }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__["jsx"])(_tarojs_components__WEBPACK_IMPORTED_MODULE_11__[/* View */ "c"], {
+            className: "footer-wrapper",
+            children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__["jsx"])(_tarojs_components__WEBPACK_IMPORTED_MODULE_11__[/* View */ "c"], {
+              children: "\u6807\u8BB0\u4E3A\u5DF2\u638C\u63E1"
+            })
+          })]
         })]
       });
     }

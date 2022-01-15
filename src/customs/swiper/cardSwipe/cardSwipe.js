@@ -27,7 +27,7 @@ Component({
     },
     upHeight: { // 下层卡片下移高度，单位px
       type: Number,
-      value: 40
+      value: 30
     },
     scaleRatio: { // 下层卡片收缩力度
       type: Number,

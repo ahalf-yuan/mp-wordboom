@@ -1,6 +1,6 @@
 import Taro from "@tarojs/taro";
 import React, { Component } from "react";
-import { View, Text } from "@tarojs/components";
+import { View, Slot } from "@tarojs/components";
 import Api from "../api/index";
 import "./index.scss";
 
@@ -86,55 +86,57 @@ export default class About extends Component<IProps, IState> {
       return {
         title: EXCHANGE[key],
         value,
-      }
+      };
     });
 
     // MOCK
     const cards = [
       {
-        title: '123',
         wordName: detail.word_name,
         phItems,
         meanParts,
-        exchange: newExchnage
+        sentence:
+          "One of the reasons that flexbox quickly caught the interest of web developers is that it brought proper alignment capabilities to the web for the first time.",
+        exchange: newExchnage,
       },
       {
-        title: '123',
-        wordName: detail.word_name,
+        wordName: "Accessibility",
         phItems,
+        sentence:
+          'Currently, she’s working on a new course, "Practical Accessibility," meant to teach devs and designers ways to make their products accessible.',
         meanParts,
-        exchange: newExchnage
+        exchange: newExchnage,
       },
       {
-        title: '123',
-        wordName: detail.word_name,
+        wordName: "test",
         phItems,
         meanParts,
-        exchange: newExchnage
-      }
-    ]
+        exchange: newExchnage,
+      },
+    ];
 
     return (
       <View className="page-wrapper">
         <van-nav-bar
+          customStyle="background:#4DC591;border:none;color:#fff;"
           title="分类标题"
-          leftText="返回"
-          leftArrow
           onClickLeft={this.onClickLeft}
           onClickRight={this.onClickRight}
-        />
-        <View className="header-wrapper">header</View>
+        >
+          <Slot name="left">
+            <View style={{ position: "absolute", top: 0 }}>Hello world</View>
+          </Slot>
+        </van-nav-bar>
+        <View className="page-content">
+          {/* <View className="header-wrapper">header</View> */}
 
-        <View className="content-wrapper">
-          内容
-          <card-swipe
-            className="card-swipe"
-            cards={cards}
-          ></card-swipe>
-        </View>
+          <View className="content-wrapper">
+            <card-swipe className="card-swipe" cards={cards}></card-swipe>
+          </View>
 
-        <View className="footer-wrapper">
-          <View>标记为已掌握</View>
+          <View className="footer-wrapper">
+            <View>标记为已掌握</View>
+          </View>
         </View>
       </View>
     );

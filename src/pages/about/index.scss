@@ -1,29 +1,86 @@
 page {
+  background: #fff;
+  overflow: hidden;
+  // background: linear-gradient(119deg, rgba(41,216,144,.6) 30%, #fff 100%);
   // background: repeating-radial-gradient(#98efcf, transparent 1000Px);
-  background: papayawhip;
+  // background: rgb(46, 46, 45);
   // background: #EFFEFF;
+  // background-image: url("../../assets/imgs/leaves.svg");
+
+  .van-nav-bar__title {
+    color: white !important;
+  }
+
+  .van-hairline--bottom:after {
+    border: 0;
+  }
+
+  .van-nav-bar,
+  .van-nav-bar__content {
+    background-color: #4DC591;
+  }
+
+  .van-nav-bar__content {
+    height: 200rpx;
+  }
+
+  .van-nav-bar,
+  .van-nav-bar__content {
+    position: relative;
+  }
+
+  .van-nav-bar__content::before {
+    content: "";
+    width: 200rpx;
+    height: 180rpx;
+    position: absolute;
+    top: -46rpx;
+    left: 0;
+    border-bottom-right-radius: 120rpx;
+    background-color: #fff;
+    opacity: 0.2;
+  }
+
+  .van-nav-bar__content::after {
+    content: "";
+    width: 220rpx;
+    height: 220rpx;
+    position: absolute;
+    top: 20rpx;
+    z-index: 10;
+    right: -40rpx;
+    border-top-left-radius: 140rpx;
+    background-color: #fff;
+    opacity: .2;
+  }
 }
 
 .page-wrapper {
-  // height: 3000px;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.page-content {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  z-index: 1;
+  position: relative;
 }
 
 .header-wrapper {
   height: 60px;
   background: #fff;
+  // background: rgba(41,216,144,.6);
+  // background: rgba(208, 2243, 288, 0.6);
+  // background: linear-gradient(119deg, #61d2c4 0%, #29d890 100%)
 }
 
 .content-wrapper {
   font-size: 12Px;
   flex: 1;
-  // overflow-y: scroll;
-  // margin: 20Px;
-  // padding: 10Px 20Px;
-  // border-radius: 20Px;
-  // box-shadow: 0 8px 12px #ebedf0;
+  // background: linear-gradient(190deg, rgba(208, 2243, 288, 0.6) 0%, #fff 100%);
   // background: #fff;
 }
 

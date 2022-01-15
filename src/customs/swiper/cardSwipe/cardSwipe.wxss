@@ -1,7 +1,7 @@
 .wrapper {
   width: 100%;
   height: 100%;
-  padding: 0 60rpx;
+  padding: 0 40rpx;
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -33,13 +33,34 @@
 
 .card-wrapper {
   width: 100%;
-  height: 740rpx;
-  background-color: #ffffff;
+  height: calc(100% - 130rpx);
+  background-color: ghostwhite;
   box-sizing: border-box;
-  border: 1rpx solid #f9f9f9;
-  box-shadow: 0 2rpx 20rpx #999999;
-  border-radius: 10rpx;
-  margin-top: 50rpx;
+  border: 1rpx solid gainsboro;
+  /* box-shadow: 0 2rpx 20rpx #999999; */
+  border-radius: 20rpx;
+  padding: 10rpx 26rpx 26rpx;
+  position: relative;
+}
+
+.card-content {
+  height: 100%;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.card-content::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-image: url("../../../assets/imgs/earth.svg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  z-index: 1;
+  opacity: 0.1;
 }
 
 .card-wrapper .top {
@@ -54,40 +75,60 @@
   justify-content: space-between;
 }
 
-
 .card-wrapper .word-name {
-    font-size: 20Px;
-    font-weight: bold;
-    margin-bottom: 12Px;
-    display: block;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  display: block;
+  color: #6abda6;
 }
 .card-wrapper .pronounce-box {
-    display: flex;
-    margin-bottom: 12Px;
+  display: flex;
+  margin-bottom: 12px;
+  color: #828282;
 }
 .card-wrapper .pronounce-box .item {
-    display: flex;
-    font-size: 12PX;
+  display: flex;
+  /* font-size: 12px; */
 }
 .card-wrapper .pronounce-box .item:first-child {
-    margin-right: 12PX;
+  margin-right: 12px;
 }
 .card-wrapper .pronounce-box .item .van-icon {
-    margin-right: 4PX;
+  margin-right: 4px;
 }
 .card-wrapper .pronounce-box .item .ph-item {
-    margin-left: 4PX;
+  margin-left: 4px;
+}
+.card-wrapper .mean-box {
+  padding: 20rpx 0;
 }
 .card-wrapper .mean-box .item {
-    display: flex;
+  display: flex;
 }
 .card-wrapper .mean-box .item .mean-part {
-    color: #9e9e9e;
-    margin-right: 10Px;
+  color: #9e9e9e;
+  margin-right: 10px;
 }
 .card-wrapper .exchange-box .item .label {
-    margin-right: 8Px;
+  margin-right: 8px;
 }
 .card-wrapper .exchange-box .item .exchange {
-    font-weight: bold;
+  font-weight: bold;
+}
+
+.card-wrapper .sentence-box {
+  display: block;
+  font-weight: 400;
+  background: #edf2f3;
+  color: #7a908a;
+  padding: 10rpx 16rpx;
+  margin-bottom: 12rpx;
+}
+
+.card-wrapper .sentence-box .title {
+  color: #343d3b;
+
+  /* font-size: 16Px; */
+  font-weight: bold;
 }

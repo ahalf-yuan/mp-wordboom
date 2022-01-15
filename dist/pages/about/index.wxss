@@ -1,29 +1,79 @@
 page {
-  background: papayawhip;
+  background: #fff;
+  overflow: hidden;
 }
-
+page .van-nav-bar__title {
+  color: white !important;
+}
+page .van-hairline--bottom:after {
+  border: 0;
+}
+page .van-nav-bar,
+page .van-nav-bar__content {
+  background-color: #4DC591;
+}
+page .van-nav-bar__content {
+  height: 200rpx;
+}
+page .van-nav-bar,
+page .van-nav-bar__content {
+  position: relative;
+}
+page .van-nav-bar__content::before {
+  content: "";
+  width: 200rpx;
+  height: 180rpx;
+  position: absolute;
+  top: -46rpx;
+  left: 0;
+  border-bottom-right-radius: 120rpx;
+  background-color: #fff;
+  opacity: 0.2;
+}
+page .van-nav-bar__content::after {
+  content: "";
+  width: 220rpx;
+  height: 220rpx;
+  position: absolute;
+  top: 20rpx;
+  z-index: 10;
+  right: -40rpx;
+  border-top-left-radius: 140rpx;
+  background-color: #fff;
+  opacity: 0.2;
+}
 .page-wrapper {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.page-content {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100vh;
+  z-index: 1;
+  position: relative;
 }
-
 .header-wrapper {
   height: 60rpx;
   background: #fff;
 }
-
 .content-wrapper {
   font-size: 12Px;
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
-
 .footer-wrapper {
   height: 80rpx;
   text-align: center;
