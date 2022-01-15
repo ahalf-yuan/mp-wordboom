@@ -82,6 +82,38 @@ export default class About extends Component<IProps, IState> {
     const { phItems = {}, meanParts = [], exchange = {} } = detail || {};
     console.log(detail);
 
+    const newExchnage = Object.entries(exchange).map(([key, value]) => {
+      return {
+        title: EXCHANGE[key],
+        value,
+      }
+    });
+
+    // MOCK
+    const cards = [
+      {
+        title: '123',
+        wordName: detail.word_name,
+        phItems,
+        meanParts,
+        exchange: newExchnage
+      },
+      {
+        title: '123',
+        wordName: detail.word_name,
+        phItems,
+        meanParts,
+        exchange: newExchnage
+      },
+      {
+        title: '123',
+        wordName: detail.word_name,
+        phItems,
+        meanParts,
+        exchange: newExchnage
+      }
+    ]
+
     return (
       <View className="page-wrapper">
         <van-nav-bar
@@ -95,49 +127,10 @@ export default class About extends Component<IProps, IState> {
 
         <View className="content-wrapper">
           内容
-          {/* card content */}
-          <View className="card-wrapper">
-            <Text className="word-name">{detail.word_name}</Text>
-
-            {/* 读音 */}
-            <View className="pronounce-box">
-              <View className="item">
-                <van-icon name="volume-o" className="icon-item" />英
-                <Text className="ph-item">[{phItems.ph_en}]</Text>
-              </View>
-              <View className="item">
-                <van-icon name="volume-o" className="icon-item" />美
-                <Text className="ph-item">[{phItems.ph_am}]</Text>
-              </View>
-            </View>
-
-            {/* 解释 */}
-            <View className="mean-box">
-              {meanParts.map((item) => (
-                <View className="item">
-                  <Text className="mean-part">{item.part}</Text>
-                  <Text>{item.means.join("；")}</Text>
-                </View>
-              ))}
-            </View>
-
-            {/* TODO */}
-            {/* 上下文 */}
-            <van-divider contentPosition="left">上下文</van-divider>
-            <Text>ssd</Text>
-
-            <van-divider dashed />
-
-            {/* 变形 */}
-            <View className="exchange-box">
-              {Object.entries(exchange).map(([key, value]) => (
-                <View className="item">
-                  <Text className="label">{EXCHANGE[key]}</Text>
-                  <Text className="exchange">{value as string}</Text>
-                </View>
-              ))}
-            </View>
-          </View>
+          <card-swipe
+            className="card-swipe"
+            cards={cards}
+          ></card-swipe>
         </View>
 
         <View className="footer-wrapper">

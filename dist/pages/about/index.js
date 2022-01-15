@@ -348,6 +348,36 @@ var About = /*#__PURE__*/function (_Component) {
           exchange = _ref3$exchange === void 0 ? {} : _ref3$exchange;
 
       console.log(detail);
+      var newExchnage = Object.entries(exchange).map(function (_ref4) {
+        var _ref5 = Object(_Users_yuanyazhen_github_projects_mp_wordboom_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(_ref4, 2),
+            key = _ref5[0],
+            value = _ref5[1];
+
+        return {
+          title: EXCHANGE[key],
+          value: value
+        };
+      }); // MOCK
+
+      var cards = [{
+        title: '123',
+        wordName: detail.word_name,
+        phItems: phItems,
+        meanParts: meanParts,
+        exchange: newExchnage
+      }, {
+        title: '123',
+        wordName: detail.word_name,
+        phItems: phItems,
+        meanParts: meanParts,
+        exchange: newExchnage
+      }, {
+        title: '123',
+        wordName: detail.word_name,
+        phItems: phItems,
+        meanParts: meanParts,
+        exchange: newExchnage
+      }];
       return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__["jsxs"])(_tarojs_components__WEBPACK_IMPORTED_MODULE_11__[/* View */ "c"], {
         className: "page-wrapper",
         children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__["jsx"])("van-nav-bar", {
@@ -361,71 +391,9 @@ var About = /*#__PURE__*/function (_Component) {
           children: "header"
         }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__["jsxs"])(_tarojs_components__WEBPACK_IMPORTED_MODULE_11__[/* View */ "c"], {
           className: "content-wrapper",
-          children: ["\u5185\u5BB9", /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__["jsxs"])(_tarojs_components__WEBPACK_IMPORTED_MODULE_11__[/* View */ "c"], {
-            className: "card-wrapper",
-            children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__["jsx"])(_tarojs_components__WEBPACK_IMPORTED_MODULE_11__[/* Text */ "b"], {
-              className: "word-name",
-              children: detail.word_name
-            }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__["jsxs"])(_tarojs_components__WEBPACK_IMPORTED_MODULE_11__[/* View */ "c"], {
-              className: "pronounce-box",
-              children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__["jsxs"])(_tarojs_components__WEBPACK_IMPORTED_MODULE_11__[/* View */ "c"], {
-                className: "item",
-                children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__["jsx"])("van-icon", {
-                  name: "volume-o",
-                  className: "icon-item"
-                }), "\u82F1", /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__["jsxs"])(_tarojs_components__WEBPACK_IMPORTED_MODULE_11__[/* Text */ "b"], {
-                  className: "ph-item",
-                  children: ["[", phItems.ph_en, "]"]
-                })]
-              }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__["jsxs"])(_tarojs_components__WEBPACK_IMPORTED_MODULE_11__[/* View */ "c"], {
-                className: "item",
-                children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__["jsx"])("van-icon", {
-                  name: "volume-o",
-                  className: "icon-item"
-                }), "\u7F8E", /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__["jsxs"])(_tarojs_components__WEBPACK_IMPORTED_MODULE_11__[/* Text */ "b"], {
-                  className: "ph-item",
-                  children: ["[", phItems.ph_am, "]"]
-                })]
-              })]
-            }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__["jsx"])(_tarojs_components__WEBPACK_IMPORTED_MODULE_11__[/* View */ "c"], {
-              className: "mean-box",
-              children: meanParts.map(function (item) {
-                return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__["jsxs"])(_tarojs_components__WEBPACK_IMPORTED_MODULE_11__[/* View */ "c"], {
-                  className: "item",
-                  children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__["jsx"])(_tarojs_components__WEBPACK_IMPORTED_MODULE_11__[/* Text */ "b"], {
-                    className: "mean-part",
-                    children: item.part
-                  }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__["jsx"])(_tarojs_components__WEBPACK_IMPORTED_MODULE_11__[/* Text */ "b"], {
-                    children: item.means.join("；")
-                  })]
-                });
-              })
-            }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__["jsx"])("van-divider", {
-              contentPosition: "left",
-              children: "\u4E0A\u4E0B\u6587"
-            }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__["jsx"])(_tarojs_components__WEBPACK_IMPORTED_MODULE_11__[/* Text */ "b"], {
-              children: "ssd"
-            }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__["jsx"])("van-divider", {
-              dashed: true
-            }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__["jsx"])(_tarojs_components__WEBPACK_IMPORTED_MODULE_11__[/* View */ "c"], {
-              className: "exchange-box",
-              children: Object.entries(exchange).map(function (_ref4) {
-                var _ref5 = Object(_Users_yuanyazhen_github_projects_mp_wordboom_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(_ref4, 2),
-                    key = _ref5[0],
-                    value = _ref5[1];
-
-                return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__["jsxs"])(_tarojs_components__WEBPACK_IMPORTED_MODULE_11__[/* View */ "c"], {
-                  className: "item",
-                  children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__["jsx"])(_tarojs_components__WEBPACK_IMPORTED_MODULE_11__[/* Text */ "b"], {
-                    className: "label",
-                    children: EXCHANGE[key]
-                  }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__["jsx"])(_tarojs_components__WEBPACK_IMPORTED_MODULE_11__[/* Text */ "b"], {
-                    className: "exchange",
-                    children: value
-                  })]
-                });
-              })
-            })]
+          children: ["\u5185\u5BB9", /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__["jsx"])("card-swipe", {
+            className: "card-swipe",
+            cards: cards
           })]
         }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__["jsx"])(_tarojs_components__WEBPACK_IMPORTED_MODULE_11__[/* View */ "c"], {
           className: "footer-wrapper",
@@ -1255,7 +1223,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_babel_loader_8_2_1_babel_loader_lib_index_js_index_tsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/_babel-loader@8.2.1@babel-loader/lib!./index.tsx */ "./node_modules/_babel-loader@8.2.1@babel-loader/lib/index.js!./src/pages/about/index.tsx");
 
 
-var config = {"navigationStyle":"custom","usingComponents":{"van-nav-bar":"../../components/vant-weapp/dist/nav-bar/index","van-icon":"../../components/vant-weapp/dist/icon/index","van-divider":"../../components/vant-weapp/dist/divider/index","van-transition":"../../components/vant-weapp/dist/transition/index","van-button":"../../components/vant-weapp/dist/button/index"}};
+var config = {"navigationStyle":"custom","usingComponents":{"van-nav-bar":"../../components/vant-weapp/dist/nav-bar/index","van-icon":"../../components/vant-weapp/dist/icon/index","van-divider":"../../components/vant-weapp/dist/divider/index","van-transition":"../../components/vant-weapp/dist/transition/index","van-button":"../../components/vant-weapp/dist/button/index","card-swipe":"../../customs/swiper/cardSwipe/cardSwipe"}};
 
 
 var inst = Page(Object(_tarojs_runtime__WEBPACK_IMPORTED_MODULE_0__["createPageConfig"])(_node_modules_babel_loader_8_2_1_babel_loader_lib_index_js_index_tsx__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"], 'pages/about/index', {root:{cn:[]}}, config || {}))

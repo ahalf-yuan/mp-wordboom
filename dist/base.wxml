@@ -114,7 +114,7 @@
 </template>
   
 <template name="tmpl_0_van-icon">
-  <van-icon name="{{i.name}}" className="{{i.className}}"  id="{{i.uid}}">
+  <van-icon  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -122,7 +122,7 @@
 </template>
   
 <template name="tmpl_0_van-divider">
-  <van-divider contentPosition="{{i.contentPosition}}" children="{{i.children}}" dashed="{{i.dashed}}"  id="{{i.uid}}">
+  <van-divider  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -137,12 +137,20 @@
   </van-transition>
 </template>
   
-<template name="tmpl_0_swiper-card">
-  <swiper-card  id="{{i.uid}}">
+<template name="tmpl_0_card-swipe">
+  <card-swipe genericCard="{{i.genericCard}}" className="{{i.className}}" cards="{{i.cards}}"  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
-  </swiper-card>
+  </card-swipe>
+</template>
+  
+<template name="tmpl_0_card">
+  <card  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </card>
 </template>
   
 <template name="tmpl_0_container">
@@ -238,7 +246,7 @@
 </template>
   
 <template name="tmpl_1_van-icon">
-  <van-icon name="{{i.name}}" className="{{i.className}}"  id="{{i.uid}}">
+  <van-icon  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -246,7 +254,7 @@
 </template>
   
 <template name="tmpl_1_van-divider">
-  <van-divider contentPosition="{{i.contentPosition}}" children="{{i.children}}" dashed="{{i.dashed}}"  id="{{i.uid}}">
+  <van-divider  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -261,12 +269,20 @@
   </van-transition>
 </template>
   
-<template name="tmpl_1_swiper-card">
-  <swiper-card  id="{{i.uid}}">
+<template name="tmpl_1_card-swipe">
+  <card-swipe genericCard="{{i.genericCard}}" className="{{i.className}}" cards="{{i.cards}}"  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
-  </swiper-card>
+  </card-swipe>
+</template>
+  
+<template name="tmpl_1_card">
+  <card  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </card>
 </template>
   
 <template name="tmpl_1_container">
@@ -362,7 +378,7 @@
 </template>
   
 <template name="tmpl_2_van-icon">
-  <van-icon name="{{i.name}}" className="{{i.className}}"  id="{{i.uid}}">
+  <van-icon  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -370,7 +386,7 @@
 </template>
   
 <template name="tmpl_2_van-divider">
-  <van-divider contentPosition="{{i.contentPosition}}" children="{{i.children}}" dashed="{{i.dashed}}"  id="{{i.uid}}">
+  <van-divider  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -385,12 +401,20 @@
   </van-transition>
 </template>
   
-<template name="tmpl_2_swiper-card">
-  <swiper-card  id="{{i.uid}}">
+<template name="tmpl_2_card-swipe">
+  <card-swipe genericCard="{{i.genericCard}}" className="{{i.className}}" cards="{{i.cards}}"  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
-  </swiper-card>
+  </card-swipe>
+</template>
+  
+<template name="tmpl_2_card">
+  <card  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </card>
 </template>
   
 <template name="tmpl_2_container">
@@ -486,7 +510,7 @@
 </template>
   
 <template name="tmpl_3_van-icon">
-  <van-icon name="{{i.name}}" className="{{i.className}}"  id="{{i.uid}}">
+  <van-icon  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -494,7 +518,7 @@
 </template>
   
 <template name="tmpl_3_van-divider">
-  <van-divider contentPosition="{{i.contentPosition}}" children="{{i.children}}" dashed="{{i.dashed}}"  id="{{i.uid}}">
+  <van-divider  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -509,12 +533,20 @@
   </van-transition>
 </template>
   
-<template name="tmpl_3_swiper-card">
-  <swiper-card  id="{{i.uid}}">
+<template name="tmpl_3_card-swipe">
+  <card-swipe genericCard="{{i.genericCard}}" className="{{i.className}}" cards="{{i.cards}}"  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
-  </swiper-card>
+  </card-swipe>
+</template>
+  
+<template name="tmpl_3_card">
+  <card  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </card>
 </template>
   
 <template name="tmpl_3_container">
@@ -602,7 +634,7 @@
 </template>
   
 <template name="tmpl_4_van-icon">
-  <van-icon name="{{i.name}}" className="{{i.className}}"  id="{{i.uid}}">
+  <van-icon  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -610,7 +642,7 @@
 </template>
   
 <template name="tmpl_4_van-divider">
-  <van-divider contentPosition="{{i.contentPosition}}" children="{{i.children}}" dashed="{{i.dashed}}"  id="{{i.uid}}">
+  <van-divider  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -625,12 +657,20 @@
   </van-transition>
 </template>
   
-<template name="tmpl_4_swiper-card">
-  <swiper-card  id="{{i.uid}}">
+<template name="tmpl_4_card-swipe">
+  <card-swipe genericCard="{{i.genericCard}}" className="{{i.className}}" cards="{{i.cards}}"  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
-  </swiper-card>
+  </card-swipe>
+</template>
+  
+<template name="tmpl_4_card">
+  <card  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </card>
 </template>
   
 <template name="tmpl_4_container">
@@ -718,7 +758,7 @@
 </template>
   
 <template name="tmpl_5_van-icon">
-  <van-icon name="{{i.name}}" className="{{i.className}}"  id="{{i.uid}}">
+  <van-icon  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -726,7 +766,7 @@
 </template>
   
 <template name="tmpl_5_van-divider">
-  <van-divider contentPosition="{{i.contentPosition}}" children="{{i.children}}" dashed="{{i.dashed}}"  id="{{i.uid}}">
+  <van-divider  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -741,12 +781,20 @@
   </van-transition>
 </template>
   
-<template name="tmpl_5_swiper-card">
-  <swiper-card  id="{{i.uid}}">
+<template name="tmpl_5_card-swipe">
+  <card-swipe genericCard="{{i.genericCard}}" className="{{i.className}}" cards="{{i.cards}}"  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
-  </swiper-card>
+  </card-swipe>
+</template>
+  
+<template name="tmpl_5_card">
+  <card  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </card>
 </template>
   
 <template name="tmpl_5_container">
@@ -826,7 +874,7 @@
 </template>
   
 <template name="tmpl_6_van-icon">
-  <van-icon name="{{i.name}}" className="{{i.className}}"  id="{{i.uid}}">
+  <van-icon  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -834,7 +882,7 @@
 </template>
   
 <template name="tmpl_6_van-divider">
-  <van-divider contentPosition="{{i.contentPosition}}" children="{{i.children}}" dashed="{{i.dashed}}"  id="{{i.uid}}">
+  <van-divider  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -849,12 +897,20 @@
   </van-transition>
 </template>
   
-<template name="tmpl_6_swiper-card">
-  <swiper-card  id="{{i.uid}}">
+<template name="tmpl_6_card-swipe">
+  <card-swipe genericCard="{{i.genericCard}}" className="{{i.className}}" cards="{{i.cards}}"  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
-  </swiper-card>
+  </card-swipe>
+</template>
+  
+<template name="tmpl_6_card">
+  <card  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </card>
 </template>
   
 <template name="tmpl_6_container">
@@ -934,7 +990,7 @@
 </template>
   
 <template name="tmpl_7_van-icon">
-  <van-icon name="{{i.name}}" className="{{i.className}}"  id="{{i.uid}}">
+  <van-icon  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -942,7 +998,7 @@
 </template>
   
 <template name="tmpl_7_van-divider">
-  <van-divider contentPosition="{{i.contentPosition}}" children="{{i.children}}" dashed="{{i.dashed}}"  id="{{i.uid}}">
+  <van-divider  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -957,12 +1013,20 @@
   </van-transition>
 </template>
   
-<template name="tmpl_7_swiper-card">
-  <swiper-card  id="{{i.uid}}">
+<template name="tmpl_7_card-swipe">
+  <card-swipe genericCard="{{i.genericCard}}" className="{{i.className}}" cards="{{i.cards}}"  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
-  </swiper-card>
+  </card-swipe>
+</template>
+  
+<template name="tmpl_7_card">
+  <card  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </card>
 </template>
   
 <template name="tmpl_7_container">
@@ -1034,7 +1098,7 @@
 </template>
   
 <template name="tmpl_8_van-icon">
-  <van-icon name="{{i.name}}" className="{{i.className}}"  id="{{i.uid}}">
+  <van-icon  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -1042,7 +1106,7 @@
 </template>
   
 <template name="tmpl_8_van-divider">
-  <van-divider contentPosition="{{i.contentPosition}}" children="{{i.children}}" dashed="{{i.dashed}}"  id="{{i.uid}}">
+  <van-divider  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -1057,12 +1121,20 @@
   </van-transition>
 </template>
   
-<template name="tmpl_8_swiper-card">
-  <swiper-card  id="{{i.uid}}">
+<template name="tmpl_8_card-swipe">
+  <card-swipe genericCard="{{i.genericCard}}" className="{{i.className}}" cards="{{i.cards}}"  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
-  </swiper-card>
+  </card-swipe>
+</template>
+  
+<template name="tmpl_8_card">
+  <card  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </card>
 </template>
   
 <template name="tmpl_8_container">
@@ -1134,7 +1206,7 @@
 </template>
   
 <template name="tmpl_9_van-icon">
-  <van-icon name="{{i.name}}" className="{{i.className}}"  id="{{i.uid}}">
+  <van-icon  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -1142,7 +1214,7 @@
 </template>
   
 <template name="tmpl_9_van-divider">
-  <van-divider contentPosition="{{i.contentPosition}}" children="{{i.children}}" dashed="{{i.dashed}}"  id="{{i.uid}}">
+  <van-divider  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -1157,12 +1229,20 @@
   </van-transition>
 </template>
   
-<template name="tmpl_9_swiper-card">
-  <swiper-card  id="{{i.uid}}">
+<template name="tmpl_9_card-swipe">
+  <card-swipe genericCard="{{i.genericCard}}" className="{{i.className}}" cards="{{i.cards}}"  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
-  </swiper-card>
+  </card-swipe>
+</template>
+  
+<template name="tmpl_9_card">
+  <card  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </card>
 </template>
   
 <template name="tmpl_9_container">
@@ -1234,7 +1314,7 @@
 </template>
   
 <template name="tmpl_10_van-icon">
-  <van-icon name="{{i.name}}" className="{{i.className}}"  id="{{i.uid}}">
+  <van-icon  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -1242,7 +1322,7 @@
 </template>
   
 <template name="tmpl_10_van-divider">
-  <van-divider contentPosition="{{i.contentPosition}}" children="{{i.children}}" dashed="{{i.dashed}}"  id="{{i.uid}}">
+  <van-divider  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -1257,12 +1337,20 @@
   </van-transition>
 </template>
   
-<template name="tmpl_10_swiper-card">
-  <swiper-card  id="{{i.uid}}">
+<template name="tmpl_10_card-swipe">
+  <card-swipe genericCard="{{i.genericCard}}" className="{{i.className}}" cards="{{i.cards}}"  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
-  </swiper-card>
+  </card-swipe>
+</template>
+  
+<template name="tmpl_10_card">
+  <card  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </card>
 </template>
   
 <template name="tmpl_10_container">
@@ -1334,7 +1422,7 @@
 </template>
   
 <template name="tmpl_11_van-icon">
-  <van-icon name="{{i.name}}" className="{{i.className}}"  id="{{i.uid}}">
+  <van-icon  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -1342,7 +1430,7 @@
 </template>
   
 <template name="tmpl_11_van-divider">
-  <van-divider contentPosition="{{i.contentPosition}}" children="{{i.children}}" dashed="{{i.dashed}}"  id="{{i.uid}}">
+  <van-divider  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -1357,12 +1445,20 @@
   </van-transition>
 </template>
   
-<template name="tmpl_11_swiper-card">
-  <swiper-card  id="{{i.uid}}">
+<template name="tmpl_11_card-swipe">
+  <card-swipe genericCard="{{i.genericCard}}" className="{{i.className}}" cards="{{i.cards}}"  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
-  </swiper-card>
+  </card-swipe>
+</template>
+  
+<template name="tmpl_11_card">
+  <card  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </card>
 </template>
   
 <template name="tmpl_11_container">
@@ -1434,7 +1530,7 @@
 </template>
   
 <template name="tmpl_12_van-icon">
-  <van-icon name="{{i.name}}" className="{{i.className}}"  id="{{i.uid}}">
+  <van-icon  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -1442,7 +1538,7 @@
 </template>
   
 <template name="tmpl_12_van-divider">
-  <van-divider contentPosition="{{i.contentPosition}}" children="{{i.children}}" dashed="{{i.dashed}}"  id="{{i.uid}}">
+  <van-divider  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -1457,12 +1553,20 @@
   </van-transition>
 </template>
   
-<template name="tmpl_12_swiper-card">
-  <swiper-card  id="{{i.uid}}">
+<template name="tmpl_12_card-swipe">
+  <card-swipe genericCard="{{i.genericCard}}" className="{{i.className}}" cards="{{i.cards}}"  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
-  </swiper-card>
+  </card-swipe>
+</template>
+  
+<template name="tmpl_12_card">
+  <card  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </card>
 </template>
   
 <template name="tmpl_12_container">
@@ -1534,7 +1638,7 @@
 </template>
   
 <template name="tmpl_13_van-icon">
-  <van-icon name="{{i.name}}" className="{{i.className}}"  id="{{i.uid}}">
+  <van-icon  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -1542,7 +1646,7 @@
 </template>
   
 <template name="tmpl_13_van-divider">
-  <van-divider contentPosition="{{i.contentPosition}}" children="{{i.children}}" dashed="{{i.dashed}}"  id="{{i.uid}}">
+  <van-divider  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -1557,12 +1661,20 @@
   </van-transition>
 </template>
   
-<template name="tmpl_13_swiper-card">
-  <swiper-card  id="{{i.uid}}">
+<template name="tmpl_13_card-swipe">
+  <card-swipe genericCard="{{i.genericCard}}" className="{{i.className}}" cards="{{i.cards}}"  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
-  </swiper-card>
+  </card-swipe>
+</template>
+  
+<template name="tmpl_13_card">
+  <card  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </card>
 </template>
   
 <template name="tmpl_13_container">
@@ -1634,7 +1746,7 @@
 </template>
   
 <template name="tmpl_14_van-icon">
-  <van-icon name="{{i.name}}" className="{{i.className}}"  id="{{i.uid}}">
+  <van-icon  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -1642,7 +1754,7 @@
 </template>
   
 <template name="tmpl_14_van-divider">
-  <van-divider contentPosition="{{i.contentPosition}}" children="{{i.children}}" dashed="{{i.dashed}}"  id="{{i.uid}}">
+  <van-divider  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
@@ -1657,12 +1769,20 @@
   </van-transition>
 </template>
   
-<template name="tmpl_14_swiper-card">
-  <swiper-card  id="{{i.uid}}">
+<template name="tmpl_14_card-swipe">
+  <card-swipe genericCard="{{i.genericCard}}" className="{{i.className}}" cards="{{i.cards}}"  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
-  </swiper-card>
+  </card-swipe>
+</template>
+  
+<template name="tmpl_14_card">
+  <card  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </card>
 </template>
   
 <template name="tmpl_14_container">

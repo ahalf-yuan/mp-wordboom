@@ -1,10 +1,54 @@
 <wxs module="cs" src="./cardSwipe.wxs"></wxs>
 <view class="wrapper">
-    <view class="cards" style="height: 100%;">
-        <block wx:for="{{cards}}" wx:for-item="card" wx:key="index">
-            <view wx:if="{{card && (circling ? (cs.circleRange(index, current_cursor, sc, cards.length, removedCards, 'in') && index !== just_shown) : (index >= current_cursor && index < cs.getRangeRemoves(removedCards, current_cursor, sc, cards.length)))}}" class="{{cs.circleRange(index, current_cursor, sc, cards.length, removedCards, 'in') && cs.circleRange(index, current_cursor, sc, cards.length, removedCards, 'loc') >= 1 && transition ? 'card-next' : ''}}" style="width: 100%; height: 100%; will-change: transform; position: absolute; top: {{upHeight * cs.circleRange(index, current_cursor, sc, cards.length, removedCards, 'loc')}}rpx; transform: translate3d(0, 0, {{current_z_index[cs.circleRange(index, current_cursor, sc, cards.length, removedCards, 'loc')]}}px) scale({{1-(scaleRatio*cs.circleRange(index, current_cursor, sc, cards.length, removedCards, 'loc'))}}); {{transition ? 'transition: all ease 0.2s;' : ''}}" data-current-cursor="{{current_cursor}}" data-card-index="{{index}}" data-card-zindex="{{current_z_index[cs.circleRange(index, current_cursor, sc, cards.length, removedCards, 'loc')]}}" data-slide-thershold="{{slideThershold}}" data-context-width="{{contextWidth}}" data-slide-duration="{{slideDuration}}" data-rotate-deg="{{rotateDeg}}" mut-bind:touchstart="{{cs.touchstart}}" mut-bind:touchmove="{{cs.touchmove}}" mut-bind:touchend="{{cs.touchend}}">
-                <card card="{{card}}"></card>
-            </view>
-        </block>
-    </view>
+	<view class="cards" style="height: 100%;">
+		<block wx:for="{{cards}}" wx:for-item="card" wx:key="index">
+			<view wx:if="{{card && (circling ? (cs.circleRange(index, current_cursor, sc, cards.length, removedCards, 'in') && index !== just_shown) : (index >= current_cursor && index < cs.getRangeRemoves(removedCards, current_cursor, sc, cards.length)))}}" class="{{cs.circleRange(index, current_cursor, sc, cards.length, removedCards, 'in') && cs.circleRange(index, current_cursor, sc, cards.length, removedCards, 'loc') >= 1 && transition ? 'card-next' : ''}}" style="width: 100%; height: 100%; will-change: transform; position: absolute; top: {{upHeight * cs.circleRange(index, current_cursor, sc, cards.length, removedCards, 'loc')}}rpx; transform: translate3d(0, 0, {{current_z_index[cs.circleRange(index, current_cursor, sc, cards.length, removedCards, 'loc')]}}px) scale({{1-(scaleRatio*cs.circleRange(index, current_cursor, sc, cards.length, removedCards, 'loc'))}}); {{transition ? 'transition: all ease 0.2s;' : ''}}" data-current-cursor="{{current_cursor}}" data-card-index="{{index}}" data-card-zindex="{{current_z_index[cs.circleRange(index, current_cursor, sc, cards.length, removedCards, 'loc')]}}" data-slide-thershold="{{slideThershold}}" data-context-width="{{contextWidth}}" data-slide-duration="{{slideDuration}}" data-rotate-deg="{{rotateDeg}}" mut-bind:touchstart="{{cs.touchstart}}" mut-bind:touchmove="{{cs.touchmove}}" mut-bind:touchend="{{cs.touchend}}">
+				<!-- <card card="{{card}}"></card> -->
+				<!-- {/* card content */} -->
+				<View class="card-wrapper">
+					<Text class="word-name">{{card.wordName}}</Text>
+
+					<!-- {/* 读音 */} -->
+					<View class="pronounce-box">
+						<View class="item">
+							<van-icon name="volume-o" class="icon-item" />英
+							<Text class="ph-item">[{{card.phItems.ph_en}}]</Text>
+						</View>
+						<View class="item">
+							<van-icon name="volume-o" class="icon-item" />美
+							<Text class="ph-item">[{{card.phItems.ph_am}}]</Text>
+						</View>
+					</View>
+
+					<!-- {/* 解释 */} -->
+					<View class="mean-box">
+						<block wx:for="{{card.meanParts}}" wx:for-item="item" wx:key="index">
+							<View class="item">
+								<Text class="mean-part">{{item.part}}</Text>
+								<Text>{{item.means}}</Text>
+							</View>
+						</block>
+					</View>
+
+					<!-- {/* TODO */} -->
+					<!-- {/* 上下文 */} -->
+					<van-divider contentPosition="left">上下文</van-divider>
+					<Text>ssd</Text>
+
+					<van-divider dashed />
+
+					<!-- {/* 变形 */} -->
+					<View class="exchange-box">
+						<block wx:for="{{card.exchange}}" wx:for-item="item" wx:key="index">
+							<View class="item">
+								<Text class="label">{{item.title}}</Text>
+								<Text class="exchange">{{item.value}}</Text>
+							</View>
+						</block>
+
+					</View>
+				</View>
+			</view>
+		</block>
+	</view>
 </view>

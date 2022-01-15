@@ -15,7 +15,8 @@ const config = {
   defineConstants: {
   },
   alias: {
-    '@/vant': path.resolve(__dirname, '../src/components/vant-weapp/dist')
+    '@/vant': path.resolve(__dirname, '../src/components/vant-weapp/dist'),
+    '@/customs': path.resolve(__dirname, '../src/customs')
   },
   copy: {
     patterns: [

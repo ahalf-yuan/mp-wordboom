@@ -6,5 +6,6 @@ export default {
     "van-divider": "@/vant/divider/index",
     "van-transition": "@/vant/transition/index",
     "van-button": "@/vant/button/index",
+    "card-swipe": "@/customs/swiper/cardSwipe/cardSwipe",
   }
 }

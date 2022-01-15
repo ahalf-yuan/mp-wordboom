@@ -1,47 +1,135 @@
-.wrapper{
-    width: 100%;
-    height: 100%;
-    padding: 0 60rpx;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    overflow: hidden;
+.wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 0 60rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
 }
 
-.cards{
-    position: relative;
-    width: 100%;
+.cards {
+  position: relative;
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.card-next {
+  -webkit-animation: fadeIn 0.5s linear;
+          animation: fadeIn 0.5s linear;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ---- card start --- */
+
+.card-wrapper {
+  width: 100%;
+  height: 740rpx;
+  background-color: #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1rpx solid #f9f9f9;
+  -webkit-box-shadow: 0 2rpx 20rpx #999999;
+          box-shadow: 0 2rpx 20rpx #999999;
+  border-radius: 10rpx;
+  margin-top: 50rpx;
+}
+
+.card-wrapper .top {
+  width: 100%;
+}
+
+.card-wrapper .bottom {
+  width: 100%;
+  padding: 20rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card-wrapper .word-name {
+    font-size: 20Px;
+    font-weight: bold;
+    margin-bottom: 12Px;
+    display: block;
+}
+
+.card-wrapper .pronounce-box {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 20rpx;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
+    margin-bottom: 12Px;
 }
 
-.card-next{
-    -webkit-animation: fadeIn 0.5s linear;
-            animation: fadeIn 0.5s linear;
+.card-wrapper .pronounce-box .item {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 12PX;
 }
 
-@-webkit-keyframes fadeIn{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
+.card-wrapper .pronounce-box .item:first-child {
+    margin-right: 12PX;
 }
 
-@keyframes fadeIn{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
+.card-wrapper .pronounce-box .item .van-icon {
+    margin-right: 4PX;
 }
+
+.card-wrapper .pronounce-box .item .ph-item {
+    margin-left: 4PX;
+}
+
+.card-wrapper .mean-box .item {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.card-wrapper .mean-box .item .mean-part {
+    color: #9e9e9e;
+    margin-right: 10Px;
+}
+
+.card-wrapper .exchange-box .item .label {
+    margin-right: 8Px;
+}
+
+.card-wrapper .exchange-box .item .exchange {
+    font-weight: bold;
+}
+
