@@ -33,23 +33,26 @@
 
 .card-wrapper {
   width: 100%;
-  height: calc(100% - 130rpx);
-  background-color: ghostwhite;
+  height: calc(100% - 200rpx);
+  /* background-color: ghostwhite; */
+  background: #fff;
   box-sizing: border-box;
   border: 1rpx solid gainsboro;
   /* box-shadow: 0 2rpx 20rpx #999999; */
   border-radius: 20rpx;
-  padding: 10rpx 26rpx 26rpx;
+  padding: 10rpx 0 26rpx;
   position: relative;
 }
 
 .card-content {
   height: 100%;
+  padding: 0 26rpx;
   overflow: scroll;
-  -webkit-overflow-scrolling: touch;
+  position: relative;
+  z-index: 10;
 }
 
-.card-content::before {
+.card-content-bg {
   content: "";
   position: absolute;
   left: 0;
@@ -74,17 +77,21 @@
   flex-direction: column;
   justify-content: space-between;
 }
+.card-wrapper .word-name,
+.card-wrapper .pronounce-box,
+.card-wrapper .mean-box {
+  margin-bottom: var(--custom-padding-sm);
+}
 
 .card-wrapper .word-name {
-  font-size: 20px;
+  display: block;
+  font-size: var(--custom-font-size-lg, 40rpx);
   font-weight: bold;
-  margin-bottom: 12px;
   display: block;
   color: #6abda6;
 }
 .card-wrapper .pronounce-box {
   display: flex;
-  margin-bottom: 12px;
   color: #828282;
 }
 .card-wrapper .pronounce-box .item {
@@ -99,9 +106,6 @@
 }
 .card-wrapper .pronounce-box .item .ph-item {
   margin-left: 4px;
-}
-.card-wrapper .mean-box {
-  padding: 20rpx 0;
 }
 .card-wrapper .mean-box .item {
   display: flex;

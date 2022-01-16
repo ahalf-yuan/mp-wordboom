@@ -1,0 +1,12 @@
+page {
+    --primary-color: #4DC591;
+    --custom-font-size-lg: 40rpx;
+
+    // padding
+    --custom-padding-base: 8rpx;
+    --custom-padding-xs: calc(var(--custom-padding-base) * 2);
+    --custom-padding-sm: calc(var(--custom-padding-base) * 3);
+    --custom-padding-md: calc(var(--custom-padding-base) * 4);
+    --custom-padding-lg: calc(var(--custom-padding-base) * 6);
+    --custom-padding-xl: calc(var(--custom-padding-base) * 8);
+}

@@ -6,8 +6,11 @@
 				<!-- <card card="{{card}}"></card> -->
 				<!-- {/* card content */} -->
 				<view class="card-wrapper">
+					<view class="card-content-bg"></view>
 					<view class="card-content">
-						<Text class="word-name">{{card.wordName}}</Text>
+
+
+						<view class="word-name"><text>{{card.wordName}}</text></view>
 
 						<!-- {/* 读音 */} -->
 						<view class="pronounce-box">
@@ -51,6 +54,24 @@
 
 
 						<!-- {/* 变形 */} -->
+						<view class="exchange-box">
+							<block wx:for="{{card.exchange}}" wx:for-item="item" wx:key="index">
+								<view class="item">
+									<Text class="label">{{item.title}}</Text>
+									<Text class="exchange">{{item.value}}</Text>
+								</view>
+							</block>
+
+						</view>
+						<view class="exchange-box">
+							<block wx:for="{{card.exchange}}" wx:for-item="item" wx:key="index">
+								<view class="item">
+									<Text class="label">{{item.title}}</Text>
+									<Text class="exchange">{{item.value}}</Text>
+								</view>
+							</block>
+
+						</view>
 						<view class="exchange-box">
 							<block wx:for="{{card.exchange}}" wx:for-item="item" wx:key="index">
 								<view class="item">

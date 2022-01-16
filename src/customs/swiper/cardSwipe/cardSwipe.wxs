@@ -1,6 +1,6 @@
 /*
- * @Author: jesse zhao 
- * @Date: 2020-04-07 02:41:53 
+ * @Author: jesse zhao
+ * @Date: 2020-04-07 02:41:53
  * @Last Modified by: jesse zhao
  * @Last Modified time: 2020-04-20 01:38:33
  * @github: https://github.com/1esse/cardSwipe
@@ -9,7 +9,9 @@ var SLIDE_THRESHOLD = 0 // 松手后滑出界面阈值
 var CONTEXT_WIDTH = 0 // 组件宽度
 var instance = {} // 卡片实例
 var startX = 0 // 手指刚接触时屏幕X轴位置
+var startY = 0
 var moveX = 0 // 移动距离
+var moveY = 0
 var cardIndex = 0 // 滑动卡片的层级索引
 var cardZindex = 0 // 滑动卡片的层级索引
 var currentCursor = 0 // 当前最上层卡片索引
@@ -33,6 +35,7 @@ function touchstart(event, ownerinstance) {
     CONTEXT_WIDTH = dataset.contextWidth + Math.floor((Math.abs(ROTATE_DEG) % 360) * dataset.contextWidth / 180)
     cardZindex = dataset.cardZindex
     startX = event.touches[0].clientX
+    startY = event.touches[0].clientY
 }
 
 function touchmove(event, ownerinstance) {
@@ -41,8 +44,15 @@ function touchmove(event, ownerinstance) {
         lock = false
         return
     }
+    // 上下滚动时，不用更新左右距离
     var clientX = event.touches[0].clientX
+    var clientY = event.touches[0].clientY
     moveX = clientX - startX
+    moveY = clientY - startY
+
+    // 当上下滑动大于左右不用更新，待优化
+    if(Math.abs(moveY) > Math.abs(moveX)) return
+
     instance.setStyle({
         "transition": "unset",
         "transform": "translate3d(" + moveX + "px, 0, " + cardZindex + "px) rotate(" + ROTATE_DEG / CONTEXT_WIDTH * moveX + "deg)",

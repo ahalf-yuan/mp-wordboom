@@ -2,6 +2,9 @@ import Taro from "@tarojs/taro";
 import React, { Component } from "react";
 import { View, Slot } from "@tarojs/components";
 import Api from "../api/index";
+
+import mockData from "./mock";
+
 import "./index.scss";
 
 interface IProps {}
@@ -26,9 +29,6 @@ export default class About extends Component<IProps, IState> {
   };
 
   componentWillMount() {
-    // Taro.setNavigationBarTitle({
-    //   title: '分类名称' // from params
-    // })
     this.fetchTransData();
   }
 
@@ -45,9 +45,11 @@ export default class About extends Component<IProps, IState> {
   }
 
   async fetchTransData() {
-    const res = await Api.fetchWordDetail({
-      w: "go",
-    });
+    // const res = await Api.fetchWordDetail({
+    //   w: "go",
+    // });
+    // TEST
+    const res = mockData;
 
     if (!res || !res.data) return;
 
@@ -118,24 +120,39 @@ export default class About extends Component<IProps, IState> {
     return (
       <View className="page-wrapper">
         <van-nav-bar
-          customStyle="background:#4DC591;border:none;color:#fff;"
           title="分类标题"
+          leftText="返回"
+          leftArrow
           onClickLeft={this.onClickLeft}
           onClickRight={this.onClickRight}
+          safeAreaInsetTop={true}
         >
-          <Slot name="left">
-            <View style={{ position: "absolute", top: 0 }}>Hello world</View>
-          </Slot>
+          {/* <Slot name="left">
+            <View style={{ position: "absolute", top: 0 }}>
+              <van-icon name="arrow-left" /> 返回
+            </View>
+          </Slot> */}
         </van-nav-bar>
         <View className="page-content">
-          {/* <View className="header-wrapper">header</View> */}
+          <View className="header-wrapper">12/234</View>
 
           <View className="content-wrapper">
             <card-swipe className="card-swipe" cards={cards}></card-swipe>
           </View>
 
           <View className="footer-wrapper">
-            <View>标记为已掌握</View>
+            <View className="menu-btn">
+              <van-button round customClass="back-btn">
+                返回
+              </van-button>
+              <van-button customClass="middle-btn" round style={{ flex: 1 }}>
+                设置
+              </van-button>
+              <van-button round customClass="next-btn">
+                下一个
+              </van-button>
+            </View>
+            <View className="link-tag">标记为已掌握</View>
           </View>
         </View>
       </View>
