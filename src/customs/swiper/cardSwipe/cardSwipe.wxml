@@ -34,71 +34,30 @@
 							</block>
 						</view>
 
-						<!-- {/* TODO */} -->
 						<!-- {/* 上下文 */} -->
 						<view class="sentence-box">
-							<view class="title">上下文</view>
+							<view class="title">上下文<text class="empty" wx:if="{{!card.sentence}}">未添加</text></view>
 							<Text class="text">{{card.sentence}}</Text>
 						</view>
 
 						<view class="sentence-box">
-							<view class="title">上下文</view>
+							<view class="title">笔记<text class="empty" wx:if="{{!card.sentence}}">未添加</text></view>
 							<Text class="text">{{card.sentence}}</Text>
 						</view>
-
-						<view class="sentence-box">
-							<view class="title">上下文</view>
-							<Text class="text">{{card.sentence}}</Text>
-						</view>
-
-
 
 						<!-- {/* 变形 */} -->
+
 						<view class="exchange-box">
+							<view class="title">词态变化</view>
 							<block wx:for="{{card.exchange}}" wx:for-item="item" wx:key="index">
-								<view class="item">
-									<Text class="label">{{item.title}}</Text>
+								<view class="item" wx:if="{{item}}">
+									<Text class="label">• {{item.title}}</Text>
 									<Text class="exchange">{{item.value}}</Text>
 								</view>
 							</block>
-
 						</view>
-						<view class="exchange-box">
-							<block wx:for="{{card.exchange}}" wx:for-item="item" wx:key="index">
-								<view class="item">
-									<Text class="label">{{item.title}}</Text>
-									<Text class="exchange">{{item.value}}</Text>
-								</view>
-							</block>
 
-						</view>
-						<view class="exchange-box">
-							<block wx:for="{{card.exchange}}" wx:for-item="item" wx:key="index">
-								<view class="item">
-									<Text class="label">{{item.title}}</Text>
-									<Text class="exchange">{{item.value}}</Text>
-								</view>
-							</block>
-
-						</view>
-						<view class="exchange-box">
-							<block wx:for="{{card.exchange}}" wx:for-item="item" wx:key="index">
-								<view class="item">
-									<Text class="label">{{item.title}}</Text>
-									<Text class="exchange">{{item.value}}</Text>
-								</view>
-							</block>
-
-						</view>
-						<view class="exchange-box">
-							<block wx:for="{{card.exchange}}" wx:for-item="item" wx:key="index">
-								<view class="item">
-									<Text class="label">{{item.title}}</Text>
-									<Text class="exchange">{{item.value}}</Text>
-								</view>
-							</block>
-
-						</view>
+						<!-- {/* 变形 end */} -->
 					</view>
 				</view>
 			</view>

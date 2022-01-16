@@ -20,6 +20,8 @@ const EXCHANGE = {
   word_done: "过去分词",
   word_ing: "现在分词",
   word_third: "第三人称单数",
+  word_er: "比较级",
+  word_est: "最高级",
 };
 
 export default class About extends Component<IProps, IState> {
@@ -84,12 +86,13 @@ export default class About extends Component<IProps, IState> {
     const { phItems = {}, meanParts = [], exchange = {} } = detail || {};
     console.log(detail);
 
-    const newExchnage = Object.entries(exchange).map(([key, value]) => {
-      return {
-        title: EXCHANGE[key],
-        value,
-      };
-    });
+    const newExchnage = Object.entries(exchange).map(
+      ([key, value]) =>
+        value && {
+          title: EXCHANGE[key],
+          value,
+        }
+    );
 
     // MOCK
     const cards = [

@@ -40,7 +40,7 @@
   border: 1rpx solid gainsboro;
   /* box-shadow: 0 2rpx 20rpx #999999; */
   border-radius: 20rpx;
-  padding: 10rpx 0 26rpx;
+  padding: 26rpx 0;
   position: relative;
 }
 
@@ -79,13 +79,15 @@
 }
 .card-wrapper .word-name,
 .card-wrapper .pronounce-box,
+.card-wrapper .sentence-box,
 .card-wrapper .mean-box {
   margin-bottom: var(--custom-padding-sm);
 }
 
 .card-wrapper .word-name {
   display: block;
-  font-size: var(--custom-font-size-lg, 40rpx);
+  font-size: 40rpx;
+  line-height: 60rpx;
   font-weight: bold;
   display: block;
   color: #6abda6;
@@ -107,12 +109,35 @@
 .card-wrapper .pronounce-box .item .ph-item {
   margin-left: 4px;
 }
+
 .card-wrapper .mean-box .item {
   display: flex;
 }
 .card-wrapper .mean-box .item .mean-part {
   color: #9e9e9e;
   margin-right: 10px;
+}
+.card-wrapper .exchange-box .item {
+  /* margin-right: 60rpx;
+  display: inline-block; */
+  color: #7a908a;
+}
+.card-wrapper .exchange-box .title {
+  color: #343d3b;
+  font-weight: bold;
+  position: relative;
+  margin-bottom: 12rpx;
+}
+.card-wrapper .exchange-box .title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 110rpx;
+  height: 12rpx;
+  background: var(--primary-color);
+  z-index: -1;
+  border-radius: 4rpx;
 }
 .card-wrapper .exchange-box .item .label {
   margin-right: 8px;
@@ -127,7 +152,7 @@
   background: #edf2f3;
   color: #7a908a;
   padding: 10rpx 16rpx;
-  margin-bottom: 12rpx;
+  border-radius: 10rpx;
 }
 
 .card-wrapper .sentence-box .title {
@@ -135,4 +160,11 @@
 
   /* font-size: 16Px; */
   font-weight: bold;
+}
+.card-wrapper .sentence-box .empty {
+  color: #7a908a;
+  font-weight: 200;
+  font-size: var(--custom-font-size-sm, 24rpx);
+  padding-left: 22rpx;
+  display: inline-block;
 }
