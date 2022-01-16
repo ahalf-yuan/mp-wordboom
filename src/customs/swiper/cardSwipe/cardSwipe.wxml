@@ -9,24 +9,23 @@
 					<view class="card-content-bg"></view>
 					<view class="card-content">
 
-
-						<view class="word-name"><text>{{card.wordName}}</text></view>
+						<view class="word-name"><text>{{card.word_name}}</text></view>
 
 						<!-- {/* 读音 */} -->
 						<view class="pronounce-box">
 							<view class="item">
 								<van-icon name="volume-o" class="icon-item" />英
-								<Text class="ph-item">[{{card.phItems.ph_en}}]</Text>
+								<Text class="ph-item">[{{card.phs.ph_en}}]</Text>
 							</view>
 							<view class="item">
 								<van-icon name="volume-o" class="icon-item" />美
-								<Text class="ph-item">[{{card.phItems.ph_am}}]</Text>
+								<Text class="ph-item">[{{card.phs.ph_am}}]</Text>
 							</view>
 						</view>
 
 						<!-- {/* 解释 */} -->
 						<view class="mean-box">
-							<block wx:for="{{card.meanParts}}" wx:for-item="item" wx:key="index">
+							<block wx:for="{{card.mean_parts}}" wx:for-item="item" wx:key="index">
 								<view class="item">
 									<Text class="mean-part">{{item.part}}</Text>
 									<Text>{{item.means}}</Text>

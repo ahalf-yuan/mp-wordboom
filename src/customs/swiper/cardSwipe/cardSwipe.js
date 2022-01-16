@@ -12,7 +12,11 @@ Component({
     removedCards: Array, // 存放已经移除的卡片的索引数据，如果索引填充了其他卡片，需要将该索引移出
     transition: Boolean, // 是否开启过渡动画
     circling: Boolean, // 是否列表循环
-    rotateDeg: Number, // 整个滑动过程旋转角度
+    rotateDeg: {
+      // 整个滑动过程旋转角度
+      type: Number,
+      value: 10,
+    },
     showCards: {
       // 显示几张卡片
       type: Number,
