@@ -29,6 +29,13 @@
   }
 }
 
+.card-item {
+  z-index: 0;
+}
+.card-item:first-child {
+  z-index: 1;
+}
+
 /* ---- card start --- */
 
 .card-wrapper {
@@ -91,6 +98,20 @@
   font-weight: bold;
   display: block;
   color: #6abda6;
+  position: relative;
+}
+.card-wrapper .word-name::after {
+  /* content: "";
+  position: absolute;
+  width: 40rpx;
+  height: 40rpx;
+  top: -10rpx;
+  left: -13rpx;
+  background-image: url("../../../assets/imgs/winner.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  transform: rotate(-20deg); */
 }
 .card-wrapper .pronounce-box {
   display: flex;

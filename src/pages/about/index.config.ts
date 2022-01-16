@@ -7,5 +7,8 @@ export default {
     "van-transition": "@/vant/transition/index",
     "van-button": "@/vant/button/index",
     "card-swipe": "@/customs/swiper/cardSwipe/cardSwipe",
+    "van-dialog": "@/vant/dialog/index",
+    "van-image": "@/vant/image/index",
+    "van-tag": "@/vant/tag/index",
   }
 }

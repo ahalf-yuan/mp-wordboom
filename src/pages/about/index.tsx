@@ -1,7 +1,10 @@
 import Taro from "@tarojs/taro";
 import React, { Component } from "react";
-import { View, Slot } from "@tarojs/components";
+import { View, Slot, Text } from "@tarojs/components";
+// import Dialog from '../../components/vant-weapp/dist/dialog/dialog';
 import Api from "../api/index";
+
+import cgtSvg from "../../assets/imgs/cgt.svg";
 
 import mockData from "./mock";
 
@@ -14,6 +17,7 @@ interface IState {
   show: boolean;
   total: number;
   current: number;
+  cardsDoneMap: object;
 }
 
 const EXCHANGE = {
@@ -34,6 +38,8 @@ export default class About extends Component<IProps, IState> {
       cards: [],
       total: 1,
       current: 1,
+      show: false,
+      cardsDoneMap: {},
     };
   }
 
@@ -107,11 +113,29 @@ export default class About extends Component<IProps, IState> {
   }
 
   onClickLeft() {
-    // wx.showToast({ title: "点击返回", icon: "none" });
+    // console.log(Taro.getCurrentPages().length)
+    Taro.navigateBack({
+      delta: 1, // 返回上一级页面。
+    }).catch(() => {
+      Taro.redirectTo({
+        url: "/pages/index/index",
+      });
+    });
   }
 
+  handleTagDone = () => {
+    this.setState({ show: true })
+  };
+
+  onConfirm = () => {
+    const {cardsDoneMap, current} = this.state;
+    cardsDoneMap[current] = true;;
+    this.setState({ show: false, cardsDoneMap: {...cardsDoneMap} });
+  };
+
   render() {
-    const { cards, total, current } = this.state;
+    const { cards, total, current, show, cardsDoneMap } = this.state;
+    const done = cardsDoneMap[current];
 
     return (
       <View className="page-wrapper">
@@ -120,7 +144,6 @@ export default class About extends Component<IProps, IState> {
           leftText="返回"
           leftArrow
           onClickLeft={this.onClickLeft}
-          onClickRight={this.onClickRight}
           safeAreaInsetTop={true}
         />
         <View className="page-content">
@@ -129,10 +152,13 @@ export default class About extends Component<IProps, IState> {
           </View>
 
           <View className="content-wrapper">
+            {done && <van-tag customClass="tag-done">已掌握</van-tag>}
             <card-swipe
               className="card-swipe"
               oncardSwipe={this.cardSwipe}
               cards={cards}
+              scaleRatio={0}
+              upHeight={0}
             ></card-swipe>
           </View>
 
@@ -157,9 +183,23 @@ export default class About extends Component<IProps, IState> {
                 下一个
               </van-button>
             </View> */}
-            <View className="link-tag">标记为已掌握</View>
+            <View className="link-tag" onClick={this.handleTagDone}>
+              标记为已掌握
+            </View>
           </View>
         </View>
+
+        <van-dialog
+          useSlot
+          title="词汇已掌握"
+          show={show}
+          showCancelButton={false}
+          onConfirm={this.onConfirm}
+          customStyle="text-align:center;"
+          confirmButtonColor="#000"
+        >
+          <van-image width="100" height="100" src={cgtSvg} />
+        </van-dialog>
       </View>
     );
   }

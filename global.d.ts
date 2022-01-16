@@ -27,5 +27,8 @@ declare namespace JSX {
     'van-divider': any,
     'swiper-card': any,
     'card-swipe': any,
+    'van-dialog': any,
+    'van-image': any,
+    'van-tag': any,
   }
 }

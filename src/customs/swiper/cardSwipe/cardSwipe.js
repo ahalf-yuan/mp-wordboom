@@ -20,7 +20,7 @@ Component({
     showCards: {
       // 显示几张卡片
       type: Number,
-      value: 1, // 多张滑动有问题，调整card-content层级即可
+      value: 3, // 多张滑动有问题，调整card-content层级即可
     },
     slideDuration: {
       // 手指离开屏幕后滑出界面时长，单位(ms)毫秒
