@@ -1,5 +1,6 @@
 {
 	"miniprogramRoot": "dist/",
+	"cloudfunctionRoot": "cloudfunctions/",
 	"projectname": "taro3_react",
 	"description": "taro3_react",
 	"appid": "wx068dd17e3d23892a",

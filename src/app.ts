@@ -3,16 +3,28 @@ import './app.scss'
 
 class App extends Component {
 
-  componentDidMount () {}
+  componentDidMount() {
+    wx.cloud.init({
+      env: 'cloud1-2gi44ltz64d95ce2',
+      traceUser: true
+    })
 
-  componentDidShow () {}
+    // 云函数调用
+    wx.cloud.callFunction({
+      name: 'login'
+    }).then(res => {
+      console.log(res)
+    })
+  }
 
-  componentDidHide () {}
+  componentDidShow() { }
 
-  componentDidCatchError () {}
+  componentDidHide() { }
+
+  componentDidCatchError() { }
 
   // this.props.children 是将要会渲染的页面
-  render () {
+  render() {
     return this.props.children
   }
 }
