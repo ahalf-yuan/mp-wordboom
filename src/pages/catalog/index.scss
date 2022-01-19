@@ -1,0 +1,38 @@
+page {
+  background: #f8f8f8;
+
+  .catalog-list-wrapper {
+    .menu-wrapper {
+      background: #fff;
+      margin-bottom: 20rpx;
+    }
+    .catalog-wrapper {
+      background: #fff;
+
+
+      .custom-cell-group {
+        margin: 0 0 0 20rpx;
+        // border: 1rpx solid #000;
+
+        .custom-cell {
+          display: flex;
+          align-items: center;
+          .slot-title, .icon-wrapper {
+            display: flex;
+            align-items: center;
+
+            .title {
+              margin-left: 12rpx;
+            }
+          }
+
+          .icon-wrapper {
+            color: #969799;
+            cursor: pointer;
+            font-size: 32rpx;
+          }
+        }
+      }
+    }
+  }
+}

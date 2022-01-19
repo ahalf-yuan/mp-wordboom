@@ -30,5 +30,9 @@ declare namespace JSX {
     'van-dialog': any,
     'van-image': any,
     'van-tag': any,
+    'van-collapse': any,
+    'van-collapse-item': any,
+    'van-cell-group': any,
+    'van-cell': any,
   }
 }

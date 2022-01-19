@@ -15,6 +15,8 @@ class App extends Component {
     }).then(res => {
       console.log(res)
     })
+
+    
   }
 
   componentDidShow() { }

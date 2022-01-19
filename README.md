@@ -2,6 +2,7 @@
 
 > Template from [taro3-vant-sample](https://github.com/NervJS/taro3-vant-sample)  
 > CardSwipe - [小程序卡片滑动组件](https://github.com/1esse/cardSwipe)
+> taro-iconfont-cli - [taro-iconfont-cli](https://github.com/iconfont-cli/taro-iconfont-cli)  
 
 ## 需要关注的点
 

@@ -1,9 +1,11 @@
+import { useGlobalIconFont } from './components/iconfont/helper';
 export default {
   pages: [
-    'pages/index/index',
     'pages/about/index',
+    'pages/index/index',
     'pages/cardList/index',
     'customs/swiper/test/index',
+    'pages/catalog/index',
   ],
   window: {
     backgroundTextStyle: 'light',
@@ -11,4 +13,5 @@ export default {
     navigationBarTitleText: 'WeChat',
     navigationBarTextStyle: 'black'
   },
+  usingComponents: Object.assign(useGlobalIconFont()),
 }
