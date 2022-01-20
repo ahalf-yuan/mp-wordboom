@@ -11,6 +11,15 @@ import request from '../service/index'
 * @param {w: string} 
 * @returns 
 */
-export const fetchWordDetail = (data:any) => {
+export const fetchWordDetail = (data: any) => {
     return request.get('/api/trans/iciba', data);
+}
+
+/**
+ * 获取每日一句
+ * @param data null
+ * @returns 
+ */
+export const fetchDailySentence = (data) => {
+    return request.get('/api/trans/iciba/sentence', data);
 }
