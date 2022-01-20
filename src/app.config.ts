@@ -6,6 +6,7 @@ export default {
     'pages/cardList/index',
     'customs/swiper/test/index',
     'pages/catalog/index',
+    'pages/scan/index',
   ],
   window: {
     backgroundTextStyle: 'light',

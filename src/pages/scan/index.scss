@@ -1,0 +1,23 @@
+page {
+    background: url('../../assets/imgs/tiny-bg.png');
+    background-position: center top;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: rgb(178, 36, 255);
+
+    .card-list-wrapper {
+        height: 100vh;
+        position: relative;
+
+        .btn-wrapper {
+            width: 100%;
+            position: absolute;
+            // bottom: 120rpx;
+            top: 78%;
+            text-align: center;
+            padding: 0 40rpx;
+            box-sizing: border-box;
+        }
+
+    }
+}
