@@ -14,7 +14,7 @@ footer_icons:
 #   enabled: true
 #   collections: true
 include:
-  - MATH/Math_Basic.md
+  - Math_Basic.md
   - Math.md
   - README.md
   - LICENSE.md
