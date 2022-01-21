@@ -1,8 +1,9 @@
-plugins:
-  - jekyll-relative-links
-relative_links:
-  enabled: true
-  collections: true
+theme: jekyll-theme-minimal
+# plugins:
+#   - jekyll-relative-links
+# relative_links:
+#   enabled: true
+#   collections: true
 include:
   - Math.md
   - README.md
