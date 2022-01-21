@@ -15,6 +15,7 @@ footer_icons:
 #   collections: true
 include:
   - Math_Basic.md
+  - MATH_Equation.md
   - Math.md
   - README.md
   - LICENSE.md
