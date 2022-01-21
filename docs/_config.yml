@@ -3,9 +3,7 @@ head_inline: "<style>td:first-child { width: 7rem; }</style>"
 title: wordboom
 
 header_pages:
-  - about.md
-  - posts.md
-  - github.md
+  - Math.md
 
 # plugins:
 #   - jekyll-relative-links
