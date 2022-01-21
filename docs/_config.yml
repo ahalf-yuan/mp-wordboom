@@ -1,9 +1,10 @@
 remote_theme: aterenin/minima-reboot
-head_inline: "<style>#nav-header { height: 0;opacity: 0; }</style>"
 title: wordboom
 
 header_pages:
   - Math.md
+  
+head_inline: "<style>#nav-header { height: 0;opacity: 0; }</style>"
 
 # plugins:
 #   - jekyll-relative-links
