@@ -1,5 +1,5 @@
 remote_theme: aterenin/minima-reboot
-head_inline: "<style>td:first-child { width: 7rem; }</style>"
+head_inline: "<style>#nav-header { height: 0;opacity: 0; }</style>"
 title: wordboom
 
 header_pages:
