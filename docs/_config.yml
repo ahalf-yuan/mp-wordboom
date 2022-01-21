@@ -3,13 +3,10 @@ title: wordboom
 
 header_pages:
   - Math.md
-  
-head_inline: "<style>#nav-header { height: 0;opacity: 0; }</style>"
 
 footer_icons:
-  - username: aterenin/minima-reboot/
-    url: https://github.com/aterenin/minima-reboot/
-    icon: icon-github.svg
+  - username: Winky
+    url: https://github.com/yuanyazhen/mp-wordboom
 
 # plugins:
 #   - jekyll-relative-links
