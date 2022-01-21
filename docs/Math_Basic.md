@@ -5,7 +5,7 @@ title: Basic Math
 head_inline: "<style>#nav-header { height: 0;opacity: 0; } h1{font-size:18px;} h4{font-size:16px;}</style>"
 ---
 
-### 【基础数字】在英语中的表述
+#【基础数字】在英语中的表述
 
 #### 1. 自然数
 > 1,2,3,4,5,6,7,8,9,10...
@@ -17,14 +17,14 @@ head_inline: "<style>#nav-header { height: 0;opacity: 0; } h1{font-size:18px;} h
 
 ![整数示例](imgs/num.png)
 
-- 整数：**integers**
-- 负数读法示例: **minus one**、**minus two**...
+- 整数：`integers`
+- 负数读法示例: `minus one`、`minus two`...
 
 #### 3. 有理数/分数
 > 3/4, 192/3,451
 
-- 有理数： **rational numbers**
-- 分数：**fractions**
+- 有理数： `rational numbers`
+- 分数：`fractions`
 - 3/4： `three over four` or `three quarters`
 
 #### 4. 小数/浮点数
@@ -32,8 +32,8 @@ head_inline: "<style>#nav-header { height: 0;opacity: 0; } h1{font-size:18px;} h
 
 ![整数示例](imgs/ref_decimals.gif)
 
-- 小数： **decimal number**
-- 浮点数： **floating point number**
+- 小数： `decimal number`
+- 浮点数： `floating point number`
 
 #### 5. 实数
 > π 3.141592653...
