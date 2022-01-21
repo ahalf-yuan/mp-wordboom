@@ -2,10 +2,10 @@
 layout: default
 title: Basic Math
 
-head_inline: "<style>#nav-header { height: 0;opacity: 0; } h1{font-size:18px;} h4{font-size:16px;}</style>"
+head_inline: "<style>#nav-header { height: 0;opacity: 0; } h1{font-size:22px;} h4{font-size:20px;}</style>"
 ---
 
-#【基础数字】在英语中的表述
+# 【基础数字】在英语中的表述
 
 #### 1. 自然数
 > 1,2,3,4,5,6,7,8,9,10...
