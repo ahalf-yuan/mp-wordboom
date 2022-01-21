@@ -2,7 +2,7 @@
 layout: default
 title: Basic Math
 
-head_inline: "<style>#nav-header { height: 0;opacity: 0; } h1{font-size:22px;padding:16px 0}h4{font-size:20px;border-left:4px solid #41d9b5;padding:0 8px;border-bottom:1px solid #41d9b5;line-height:28px}blockquote{background:#f0f8ff}</style>"
+head_inline: "<style>#nav-header { height: 0;opacity: 0; }h1{font-size:22px;padding:16px 0}h4{font-size:20px;border-left:4px solid #41d9b5;padding:0 8px;line-height:28px}blockquote{background:#f0f8ff}body{overflow-x:hidden}</style>"
 ---
 
 # 【基础数字】在英语中的表述
