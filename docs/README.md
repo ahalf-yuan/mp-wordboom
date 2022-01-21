@@ -1,3 +1,8 @@
+---
+layout: default
+title: About
+---
+
 # mp-wordboom
 
 > Template from [taro3-vant-sample](https://github.com/NervJS/taro3-vant-sample)  
