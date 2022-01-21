@@ -1,7 +1,12 @@
 remote_theme: aterenin/minima-reboot
 head_inline: "<style>td:first-child { width: 7rem; }</style>"
 title: wordboom
-header_pages: ''
+
+header_pages:
+  - about.md
+  - posts.md
+  - github.md
+
 # plugins:
 #   - jekyll-relative-links
 # relative_links:
