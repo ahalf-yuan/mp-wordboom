@@ -16,6 +16,7 @@ footer_icons:
 include:
   - Math_Basic.md
   - MATH_Equation.md
+  - punctuation_basic.md
   - Math.md
   - README.md
   - LICENSE.md
