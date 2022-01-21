@@ -15,7 +15,6 @@ head_inline: "<style>#nav-header { height: 0;opacity: 0; }h1{font-size:22px;padd
 | `.`  | period | 句号 |
 | `-`  | hyphen | 连字符 |
 | `——` | dash   | 破折号 |
-| `——` | dash   | 破折号 |
 | `_`  | underscore/underline | 下划线 |
 | `'`  | apostrophe | 撇号 |
 | `:`  | colon     | 冒号 |
@@ -31,7 +30,7 @@ head_inline: "<style>#nav-header { height: 0;opacity: 0; }h1{font-size:22px;padd
 | `\` | backslash | 反斜杠 |
 | `<` | less than sign | 小于 |
 | `>` | greater than sign | 大于 |
-| `|` | vertical bar | 竖线 |
+| `\|` | vertical bar | 竖线 |
 | `@` | at sign | - |
 | `#` | pound sign/hashtag | - |
 | `%` | percent sign | 百分号 |
