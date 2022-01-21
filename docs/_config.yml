@@ -1,5 +1,6 @@
 remote_theme: aterenin/minima-reboot
 title: wordboom
+header_pages: ''
 # plugins:
 #   - jekyll-relative-links
 # relative_links:
