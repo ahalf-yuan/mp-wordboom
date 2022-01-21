@@ -1,6 +1,7 @@
 ---
 layout: default
 title: About
+head_inline: "<style>#nav-header { height: 0;opacity: 0; }</style>"
 ---
 
 # mp-wordboom
