@@ -6,6 +6,11 @@ header_pages:
   
 head_inline: "<style>#nav-header { height: 0;opacity: 0; }</style>"
 
+footer_icons:
+  - username: aterenin/minima-reboot/
+    url: https://github.com/aterenin/minima-reboot/
+    icon: icon-github.svg
+
 # plugins:
 #   - jekyll-relative-links
 # relative_links:
