@@ -2,7 +2,7 @@
 layout: default
 title: Basic Math
 
-head_inline: "<style>#nav-header { height: 0;opacity: 0; } h1{font-size:22px;} h4{font-size:20px;}</style>"
+head_inline: "<style>#nav-header { height: 0;opacity: 0; } h1{font-size:22px;padding:16px 0}h4{font-size:20px;border-left:4px solid #41d9b5;padding:0 8px;border-bottom:1px solid #41d9b5;line-height:28px}blockquote{background:#f0f8ff}</style>"
 ---
 
 # 【基础数字】在英语中的表述
@@ -10,7 +10,7 @@ head_inline: "<style>#nav-header { height: 0;opacity: 0; } h1{font-size:22px;} h
 #### 1. 自然数
 > 1,2,3,4,5,6,7,8,9,10...
 
-自然数：`natural numbers` or `counting numbers`
+- 自然数：`natural numbers` or `counting numbers`
 
 #### 2. 整数
 > ...,-3,-2,-1, 0 ,1,2,3...
