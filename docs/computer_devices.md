@@ -2,7 +2,7 @@
 layout: default
 title: Basic Math
 
-head_inline: "<style>#nav-header { height: 0;opacity: 0; }h1{font-size:22px;padding:16px 0}h4{font-size:20px;border-left:4px solid #41d9b5;padding:0 8px;line-height:28px}blockquote{background:#f0f8ff}body{overflow-x:hidden}img{max-width:320rem}table{margin: 20px 0;}tr{border-bottom:1px solid #f8f8f8}td{padding:10px}</style>"
+head_inline: "<style>#nav-header { height: 0;opacity: 0; }h1{font-size:22px;padding:16px 0}h4{font-size:20px;border-left:4px solid #41d9b5;padding:0 8px;line-height:28px}blockquote{background:#f0f8ff}body{overflow-x:hidden}img{max-width:320rem}table{margin: 20px 0;}table,table tr th, table tr td { border:1px solid #c9cccb;padding:6px}</style>"
 ---
 
 # 常见【计算机设备】英文表述
