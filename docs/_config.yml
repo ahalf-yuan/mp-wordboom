@@ -18,11 +18,4 @@ include:
   - MATH_Equation.md
   - punctuation_basic.md
   - computer_devices.md
-  - Math.md
-  - README.md
-  - LICENSE.md
-  - COPYING.md
-  - CODE_OF_CONDUCT.md
-  - CONTRIBUTING.md
-  - ISSUE_TEMPLATE.md
-  - PULL_REQUEST_TEMPLATE.md
+  - idiom_colors.md
