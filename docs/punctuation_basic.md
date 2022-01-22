@@ -2,7 +2,7 @@
 layout: default
 title: punctuation basic
 
-head_inline: "<style>#nav-header { height: 0;opacity: 0; }h1{font-size:22px;padding:16px 0}h4{font-size:20px;border-left:4px solid #41d9b5;padding:0 8px;line-height:28px}blockquote{background:#f0f8ff}body{overflow-x:hidden}img{max-width:320rem}main{padding-bottom: 20px;}tr{border-bottom:1px solid #e8e6e6;}td{padding: 10px 0;}</style>"
+head_inline: "<style>#nav-header { height: 0;opacity: 0; }h1{font-size:22px;padding:16px 0}h4{font-size:20px;border-left:4px solid #41d9b5;padding:0 8px;line-height:28px}blockquote{background:#f0f8ff}body{overflow-x:hidden}img{max-width:320rem}main{padding-bottom: 20px;}tr{border-bottom:1px solid #e8e6e6;}td{padding: 6px 0;}</style>"
 ---
 
 # 【常用标点符号】在英语中的表述
