@@ -5,6 +5,7 @@ export default {
     'van-nav-bar': '@/vant/nav-bar/index',
     'van-button': '@/vant/button/index',
     "van-dialog": "@/vant/dialog/index",
-    "van-image": "@/vant/image/index"
+    "van-image": "@/vant/image/index",
+    "van-cell": "@/vant/cell/index",
   }
 }

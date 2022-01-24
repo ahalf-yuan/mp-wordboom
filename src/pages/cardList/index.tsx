@@ -1,19 +1,34 @@
 import Taro from "@tarojs/taro";
 import React, { Component } from "react";
 import { View, Text, Slot } from "@tarojs/components";
-
+import { getCardList } from "./config";
 import mockData from "./mock";
 
 import "./index.scss";
 
 export default class cardList extends Component {
   state = {
+    title: "词汇列表",
     show: false,
     list: [],
   };
 
   componentWillMount() {
-    this.fetchTransData()
+    const query = Taro.getCurrentInstance().router.params || {};
+    const { type, title } = query;
+    const dataList = getCardList(type);
+    this.setState(
+      {
+        list: dataList,
+        title,
+      },
+      () => {
+        // set navbar title
+        Taro.setNavigationBarTitle({
+          title: title || '词汇列表',
+        });
+      }
+    );
   }
 
   componentDidMount() {}
@@ -58,10 +73,9 @@ export default class cardList extends Component {
       <View className="card-list-wrapper">
         {list.map((item) => (
           <view className="card-item">
-            <Text className="word">{item.word_name}</Text>
+            <Text className="word">{item.word}</Text>
             <view className="mean">
-              <Text className="mean-part">{item.mean.part}</Text>
-              <Text>{item.mean.means}</Text>
+              <Text className="zh-trans">{item.trans}</Text>
             </view>
           </view>
         ))}

@@ -1,6 +1,6 @@
 page {
   --nav-bar-text-color: #fff;
-  --nav-bar-background-color: #4DC591;
+  // --nav-bar-background-color: #4DC591;
 
   background: #f8f8f8;
   overflow: hidden;
@@ -22,7 +22,8 @@ page {
 
   .van-nav-bar,
   .van-nav-bar__content {
-    background-color: #4DC591;
+    // background-color: #4DC591;
+    background-color: linear-gradient(rgb(58, 219, 185), rgb(245, 245, 245));
   }
 
   .van-nav-bar {

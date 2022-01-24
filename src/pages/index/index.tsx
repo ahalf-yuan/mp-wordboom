@@ -1,8 +1,9 @@
 import Taro from "@tarojs/taro";
 import React, { Component } from "react";
-import { View, Text, Slot } from "@tarojs/components";
+import { View, Text, Slot, Navigator } from "@tarojs/components";
 // import Dialog from "../../components/vant-weapp/dist/dialog/dialog";
 import Api from "../api/index";
+import { Articles, cloudhost, vocabulary } from "./config";
 import mockSentence from "./mockSentence";
 import mockHot from "./mockHot";
 
@@ -37,6 +38,14 @@ export default class Index extends Component {
     this.setState({ dailyData: mockSentence });
   }
 
+  handleClickSetItem = (value) => {
+    const {key, title} = value;
+    // Navigator
+    Taro.navigateTo({
+      url: `/pages/cardList/index?type=${key}&title=${title}`,
+    });
+  };
+
   render() {
     const { dailyData } = this.state || {};
     const { picture2, content, note } = dailyData || {};
@@ -64,24 +73,42 @@ export default class Index extends Component {
             </View>
 
             <View className="hot-wrapper">
-              <Text className="hot-title">热门推荐</Text>
-              {mockHot.map((item) => (
-                <View className="card-item">
-                  <View className="left-box">
-                    <van-image
-                      customClass="custom-image"
-                      width="50"
-                      height="50"
-                      fit="cover"
-                      src={item.icon ? item.icon : defaultSVG}
-                    />
+              <Text className="hot-title">文章推荐</Text>
+              <View className="article-wrapper">
+                {Articles.map((item) => (
+                  <van-cell
+                    title={item.title}
+                    isLink={true}
+                    url={`/pages/preview/index?url=${cloudhost + item.link}`}
+                  />
+                ))}
+              </View>
+            </View>
+
+            <View className="hot-wrapper">
+              <Text className="hot-title">词汇集合</Text>
+              <View className="card-wrapper">
+                {vocabulary.map((item) => (
+                  <View
+                    className="card-item"
+                    onClick={() => this.handleClickSetItem(item)}
+                  >
+                    <View className="left-box">
+                      <van-image
+                        customClass="custom-image"
+                        width="50"
+                        height="50"
+                        fit="cover"
+                        src={item.icon ? item.icon : defaultSVG}
+                      />
+                    </View>
+                    <View className="right-box">
+                      <Text className="title">{item.title}</Text>
+                      <Text className="detail">{item.detail}</Text>
+                    </View>
                   </View>
-                  <View className="right-box">
-                    <Text className="title">{item.title}</Text>
-                    <Text className="detail">{item.detail}</Text>
-                  </View>
-                </View>
-              ))}
+                ))}
+              </View>
             </View>
           </View>
         </View>

@@ -1,5 +1,5 @@
 page {
-  background: #f8f8f8;
+  background: rgb(245, 245, 245);
   overflow-x: hidden;
   height: 100vh;
 
@@ -7,7 +7,8 @@ page {
     // background: rgb(238, 241, 233);
     height: 220rpx;
     // position: relative;
-    background: linear-gradient(107.16deg, #61D2C4 -9.45%, #29D890 85.23%);
+    background: linear-gradient(rgb(58, 219, 185), rgb(245, 245, 245));
+    // background: linear-gradient(107.16deg, #61D2C4 -9.45%, #29D890 85.23%);
 
     .van-nav-bar__title {
       color: white !important;
@@ -55,19 +56,18 @@ page {
 
     .content-wrapper {
       position: absolute;
-      top: -98rpx;
+      top: -120rpx;
       z-index: 1;
       width: 100%;
+      padding-bottom: 50rpx;
 
       .daily-sentence-card {
+        position: relative;
         width: calc(100% - 60rpx);
-        // background: rgb(245, 244, 243);
-        // border-bottom: 1rpx solid red;
+        height: 340rpx;
         margin: 0 30rpx;
-        padding-bottom: 12rpx;
-        border: 1rpx solid #dadada;
-        padding: 0 0 20rpx;
         border-radius: 10rpx;
+        box-shadow: #dedede;
 
         .tag {
           position: absolute;
@@ -77,15 +77,24 @@ page {
           -webkit-box-sizing: border-box;
           box-sizing: border-box;
           color: #fff;
+          font-size: 24rpx;
         }
 
         .bottom {
-          padding: 0 20rpx;
+          padding: 6rpx 20rpx 12rpx;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          z-index: 1;
+          background: rgba(255,255,255,1);
+          box-sizing: border-box;
+          border-bottom-left-radius: 10rpx;
+          border-bottom-right-radius: 10rpx;
         }
 
         .title {
           width: 100%;
-          // background: rgba(117, 115, 115, .5);
           box-sizing: border-box;
         }
 
@@ -98,8 +107,8 @@ page {
         .custom-image {
           border-radius: 10rpx;
           overflow: hidden;
-          border-bottom-right-radius: 0;
-          border-bottom-left-radius: 0;
+          border-bottom-left-radius: 10rpx;
+          border-bottom-right-radius: 10rpx;
         }
       }
 
@@ -113,28 +122,40 @@ page {
           padding: 12rpx 0;
           font-weight: bold;
 
-          &::after {
-            content: "";
-            position: absolute;
-            bottom: 10rpx;
-            left: 0;
-            width: 116rpx;
-            height: 12rpx;
-            background: var(--primary-color);
-            z-index: -1;
-            border-radius: 4rpx;
-          }
+          // &::after {
+          //   content: "";
+          //   position: absolute;
+          //   bottom: 10rpx;
+          //   left: 0;
+          //   width: 116rpx;
+          //   height: 12rpx;
+          //   background: var(--primary-color);
+          //   z-index: -1;
+          //   border-radius: 4rpx;
+          // }
+        }
+        .article-wrapper {
+          background: #fff;
+          border-radius: 8rpx;
+        }
+
+        .card-wrapper {
+          background: #fff;
+          padding: 0 20rpx;
+          border-radius: 8rpx;
+        }
+
+        .article-item {
+          padding: 20rpx 0;
+          border-bottom: 1rpx solid #f3f3f3;
         }
 
         .card-item {
-          // background: #efefef;
-          // background: #f7f9f8;
-          border-radius: 8rpx;
           margin: 18rpx 0;
-          border: 1rpx solid #dedede;
-          padding: 26rpx;
+          padding: 20rpx 0;
           display: flex;
-          // box-shadow: rgb(0 0 0 / 10%) 1px 2px 8px;
+          cursor: pointer;
+          border-bottom: 1rpx solid #f3f3f3;
 
           .left-box {
             margin-right: 14rpx;
