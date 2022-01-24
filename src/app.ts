@@ -9,12 +9,12 @@ class App extends Component {
       traceUser: true
     })
 
-    // 云函数调用
-    wx.cloud.callFunction({
-      name: 'login'
-    }).then(res => {
-      console.log(res)
-    })
+    // // 云函数调用
+    // wx.cloud.callFunction({
+    //   name: 'login'
+    // }).then(res => {
+    //   console.log(res)
+    // })
 
     
   }
