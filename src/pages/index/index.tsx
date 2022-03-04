@@ -72,7 +72,7 @@ export default class Index extends Component {
               <van-image
                 customClass="custom-image"
                 width="100%"
-                height="320rpx"
+                height="330rpx"
                 fit="cover"
                 src={picture2}
               />
