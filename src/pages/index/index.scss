@@ -67,6 +67,7 @@ page {
         height: 340rpx;
         margin: 0 30rpx;
         border-radius: 10rpx;
+        background-color: #fff;
         box-shadow: #dedede;
 
         .tag {
@@ -86,8 +87,8 @@ page {
           bottom: 0;
           left: 0;
           width: 100%;
-          z-index: 1;
-          background: rgba(255,255,255,1);
+          z-index: 10;
+          background: #fff;
           box-sizing: border-box;
           border-bottom-left-radius: 10rpx;
           border-bottom-right-radius: 10rpx;
